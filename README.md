@@ -1,6 +1,6 @@
 # Hello JavaScript
 
-[![Python](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](https://python.org)
+[![Python](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## Curso para aprender el lenguaje de programación JavaScript desde cero y para principiantes
 
