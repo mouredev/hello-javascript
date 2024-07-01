@@ -12,6 +12,7 @@
 ## Inicio curso
 
 ### 10 de julio a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/4azkvPUJ?event=1257288603328057384)
 
 ## Clases en vídeo
 
