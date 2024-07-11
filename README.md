@@ -1,6 +1,6 @@
 # Hello JavaScript
 
-[![Python](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](https://developer.mozilla.org/es/docs/Web/JavaScript) [![NodeJS](https://img.shields.io/badge/NODEJS-v20+-green?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=101010)](https://nodejs.org/)
 
 ## Curso para aprender el lenguaje de programación JavaScript desde cero y para principiantes
 
@@ -9,22 +9,54 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Inicio curso
+## Próxima clase
 
-### 10 de julio a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/4azkvPUJ?event=1257288603328057384)
+### Miércoles 17 de julio a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/mouredev?event=1260687219744706580)
 
 ## Clases en vídeo
 
-Próximamente...
+#### [CLASE 1 | 10/07/2024 | Introducción, instalación, hola mundo y variables](https://www.twitch.tv/videos/2194200202?t=00h14m43s)
 
-## Información importante y preguntas frecuentes
+Código:
 
-Próximamente...
+* [00-helloworld.js](./Basic/00-helloworld.js)
+* [01-variables.js](./Basic/01-variables.js)
 
 ## Enlaces de interés
 
-Próximamente...
+* Impacto: [Stack Overflow](https://survey.stackoverflow.co/2023/#most-popular-technologies-language) | [GitHub](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/) | [Índice TIOBE](https://www.tiobe.com/tiobe-index/) | [Google Trends](https://trends.google.es/trends/explore?cat=5&date=today%205-y&q=%2Fm%2F02p97,%2Fm%2F05z1_,%2Fm%2F07sbkfb&hl=es)
+* [Historia](https://es.wikipedia.org/wiki/JavaScript)
+* [Especificación ECMAScript](https://tc39.es/ecma262/)
+* [Documentación Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript)
+* [Documentación W3Schools](https://www.w3schools.com/js/)
+* [Documentación JS Info](https://es.javascript.info/)
+* [Libro Eloquent JavaScript](https://eloquentjavascript.net/)
+* [Playground](https://runjs.app/play)
+* [Node.js](https://nodejs.org)
+* Exploradores: [Chrome](https://www.google.com/intl/es_es/chrome/) | [Brave](https://brave.com/download/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Guía de estilo](https://google.github.io/styleguide/jsguide.html)
+
+
+## Preguntas frecuentes
+
+#### ¿Debo tener conocimientos previos?
+Mi idea es que el curso sea desde cero y para principiantes. Pensado para una persona que comienza por primera vez a programar. Es un curso de fundamentos, donde nos centraremos en aprender las bases del lenguaje con JavaScript puro (Vanilla JS). Esto no es un curso para aprender a desarrollar proyectos. Vamos a empezar desde el principio.
+
+Si la acogida de la comunidad es buena, seguiré creando cursos más avanzados.
+
+#### ¿Se subirá el curso a YouTube?
+Sí, cuando esté finalizado lo subiré editado y en un único vídeo a mi [canal principal](https://youtube.com/@mouredev). Por el momento puedes ver cada clase independiente desde la grabación de [Twitch](https://www.twitch.tv/mouredev/videos) (todas las emisiones quedan guardadas 3 meses).
+
+#### ¿Cuánto durará el curso?
+Esta primera parte se centrará en los fundamentos del lenguaje. El curso finalizará cuando se explique todo el temario, es decir, el tiempo que haga falta. Creo que es mucho mejor así que poniendo una fecha límite, así me aseguro de emplear el tiempo que sea necesario para que el aprendizaje sea lo mejor posible.
+
+#### ¿Existe algún lugar donde consultar dudas?
+He creado un canal llamado "JavaScript" en el [servidor de Discord](https://discord.gg/mouredev) de la comunidad. Allí puedes consultar dudas y ayudar al resto de miembros. Así nos beneficiamos tod@s.
+
+#### ¿Cómo puedo practicar?
+A medida que avance el curso, crearé ficheros de ejercicios para poner en práctica lo aprendido. También puedes realizar los ejercicios de mi web [retosdeprogramacion.com](https://retosdeprogramacion.com).
 
 ## ![https://mouredev.com](https://raw.githubusercontent.com/mouredev/mouredev/master/mouredev_emote.png) Hola, mi nombre es Brais Moure.
 ### Freelance full-stack iOS & Android engineer
