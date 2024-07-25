@@ -11,8 +11,8 @@
 
 ## Próxima clase
 
-### Miércoles 24 de julio a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/QY3tKpjC?event=1263226339302047755)
+### Miércoles 31 de julio a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/mouredev?event=1265768501356794037)
 
 ## Clases en vídeo
 
@@ -33,6 +33,15 @@ Código:
 * [05 - Ejercicios: Operadores](./Basic/05-operators-exercises.js)
 * [06 - Strings](./Basic/06-strings.js)
 * [07 - Ejercicios: Strings](./Basic/07-strings-exercises.js)
+
+#### [CLASE 3 | 24/07/2024 | Condicionales, arrays y sets](https://www.twitch.tv/videos/2206228701?t=00h16m02s)
+
+Código:
+
+* [08 - Condicionales](./Basic/08-conditionals.js)
+* [09 - Ejercicios: Condicionales](./Basic/09-conditionals-exercises.js)
+* [10 - Array](./Basic/10-array.js)
+* [11 - Set](./Basic/11-set.js)
 
 ## Enlaces de interés
 
