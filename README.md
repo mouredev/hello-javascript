@@ -11,8 +11,8 @@
 
 ## Próxima clase
 
-### Miércoles 31 de julio a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/mouredev?event=1265768501356794037)
+### Miércoles 7 de agosto a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/ZZ98qNuV?event=1268298731183411200)
 
 ## Clases en vídeo
 
@@ -42,6 +42,17 @@ Código:
 * [09 - Ejercicios: Condicionales](./Basic/09-conditionals-exercises.js)
 * [10 - Array](./Basic/10-array.js)
 * [11 - Set](./Basic/11-set.js)
+
+#### [CLASE 4 | 31/07/2024 | Mapas, bucles y funciones](https://www.twitch.tv/videos/2212289583?t=00h17m45s)
+
+Código:
+
+* [12 - Map](./Basic/12-map.js)
+* [13 - Ejercicios: Estructuras](./Basic/13-structures-exercises.js)
+* [14 - Bucles](./Basic/14-loops.js)
+* [15 - Ejercicios: Bucles](./Basic/15-loops-exercises.js)
+* [16 - Funciones](./Basic/16-functions.js)
+* [17 - Ejercicios: Funciones](./Basic/17-functions-exercises.js)
 
 ## Enlaces de interés
 
