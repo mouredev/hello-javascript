@@ -22,4 +22,4 @@ https://www.twitch.tv/videos/2200149072?t=00h08m02s
 
 // 9. A continuación, modifica los valores de las constantes
 
-// 10. Comenta las líneas que produzcan algún tipo de error al ejecutarser
+// 10. Comenta las líneas que produzcan algún tipo de error al ejecutarse
