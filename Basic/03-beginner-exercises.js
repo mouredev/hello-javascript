@@ -66,10 +66,5 @@ const undefinedDate2 = undefined;
 const nullDate2 = null;
 
 // 9. A continuación, modifica los valores de las constantes
-// 10. Comenta las líneas que produzcan algún tipo de error al ejecutarser
 
-// stringDate2 = "Marquitos";
-// numberDate2 = 100;
-// booleanDate2 = false;
-// undefinedDate2 = undefined;
-// nullDate2 = null;
+// 10. Comenta las líneas que produzcan algún tipo de error al ejecutarse
