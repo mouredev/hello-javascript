@@ -8,55 +8,62 @@ https://www.twitch.tv/videos/2206228701?t=00h16m02s
 
 // Declaración
 
-let mySet = new Set()
+let mySet = new Set();
 
-console.log(mySet)
+console.log(mySet);
 
 // Inicialización
 
-mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
+mySet = new Set([
+  "Brais",
+  "Moure",
+  "mouredev",
+  37,
+  true,
+  "braismoure@mouredev.com",
+]);
 
-console.log(mySet)
+console.log(mySet);
 
 // Métodos comunes
 
 // add y delete
 
-mySet.add("https://moure.dev")
+mySet.add("https://moure.dev");
 
-console.log(mySet)
+console.log(mySet);
 
-mySet.delete("https://moure.dev")
+mySet.delete("https://moure.dev");
 
-console.log(mySet)
+console.log(mySet);
 
-console.log(mySet.delete("Brais"))
-console.log(mySet.delete(4))
+console.log(mySet.delete("Brais"));
+console.log(mySet.delete(4));
 
-console.log(mySet)
+console.log(mySet);
 
 // has
 
-console.log(mySet.has("Moure"))
-console.log(mySet.has("Brais"))
+console.log(mySet.has("Moure"));
+console.log(mySet.has("Brais"));
 
 // size
 
-console.log(mySet.size)
+console.log(mySet.size);
 
 // Convertir un set a array
-let myArray = Array.from(mySet)
-console.log(myArray)
+let myArray = Array.from(mySet);
+console.log(myArray);
 
 // Convertir un array a set
 
-mySet = new Set(myArray)
-console.log(mySet)
+mySet = new Set(myArray);
+console.log(mySet);
 
 // No admite duplicados
 
-mySet.add("braismoure@mouredev.com")
-mySet.add("braismoure@mouredev.com")
-mySet.add("braismoure@mouredev.com")
-mySet.add("BraisMoure@mouredev.com")
-console.log(mySet)
+mySet.add("braismoure@mouredev.com");
+mySet.add("braismoure@mouredev.com");
+mySet.add("braismoure@mouredev.com");
+mySet.add("BraisMoure@mouredev.com");
+console.log(mySet);
