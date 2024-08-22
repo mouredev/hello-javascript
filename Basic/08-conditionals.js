@@ -1,7 +1,7 @@
 /*
 Clase 3 en vídeo | 24/07/2024
 Condicionales, arrays y sets
-https://www.twitch.tv/videos/2206228701?t=00h16m02s
+https://www.youtube.com/live/XCNjoIoO3Ws?si=3XCjdZ9r41JID-by&t=978
 */
 
 // if, else if, else

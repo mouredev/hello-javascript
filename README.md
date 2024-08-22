@@ -9,21 +9,21 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Próxima clase
+## Curso finalizado (por el momento)
 
-### Miércoles 21 de agosto a las 20:00h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-#### Puedes crear un recordatorio y consultar el horario en tu país desde [Discord](https://discord.gg/7nB2HZRz?event=1273733009828220938)
+### Una vez editado se subirá como un único vídeo a [YouTube](https://youtube.com/@mouredev). Por el momento puedes ver los directos individuales.
+#### El curso continuará con una parte intermedia. Lo anunciaré en redes y actualizaré el repo con el nuevo contenido.
 
 ## Clases en vídeo
 
-#### [CLASE 1 | 10/07/2024 | Introducción, instalación, hola mundo y variables](https://www.twitch.tv/videos/2194200202?t=00h14m43s)
+#### [CLASE 1 | 10/07/2024 | Introducción, instalación, hola mundo y variables](https://www.youtube.com/live/hoULS5isDck?si=qtcStT34Ef8ETBmB&t=915)
 
 Código:
 
 * [00 - Hola Mundo](./Basic/00-helloworld.js)
 * [01 - Variables](./Basic/01-variables.js)
 
-#### [CLASE 2 | 17/07/2024 | Tipos de datos, operadores y strings](https://www.twitch.tv/videos/2200149072?t=00h08m02s)
+#### [CLASE 2 | 17/07/2024 | Tipos de datos, operadores y strings](https://www.youtube.com/live/euVbF1eatEY?si=nHS3QznAlA_C39NK&t=808)
 
 Código:
 
@@ -34,7 +34,7 @@ Código:
 * [06 - Strings](./Basic/06-strings.js)
 * [07 - Ejercicios: Strings](./Basic/07-strings-exercises.js)
 
-#### [CLASE 3 | 24/07/2024 | Condicionales, arrays y sets](https://www.twitch.tv/videos/2206228701?t=00h16m02s)
+#### [CLASE 3 | 24/07/2024 | Condicionales, arrays y sets](https://www.youtube.com/live/XCNjoIoO3Ws?si=3XCjdZ9r41JID-by&t=978)
 
 Código:
 
@@ -43,7 +43,7 @@ Código:
 * [10 - Array](./Basic/10-array.js)
 * [11 - Set](./Basic/11-set.js)
 
-#### [CLASE 4 | 31/07/2024 | Mapas, bucles y funciones](https://www.twitch.tv/videos/2212289583?t=00h17m45s)
+#### [CLASE 4 | 31/07/2024 | Mapas, bucles y funciones](https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885)
 
 Código:
 
@@ -54,7 +54,7 @@ Código:
 * [16 - Funciones](./Basic/16-functions.js)
 * [17 - Ejercicios: Funciones](./Basic/17-functions-exercises.js)
 
-#### [CLASE 5 | 07/08/2024 | Objetos, desestructuración, propagación y clases](https://www.twitch.tv/videos/2218300512?t=00h17m10s)
+#### [CLASE 5 | 07/08/2024 | Objetos, desestructuración, propagación y clases](https://www.youtube.com/live/SBXEpAx_y_Q?si=Sbqqa2-_eGwsUkH-&t=958)
 
 Código:
 
@@ -64,7 +64,7 @@ Código:
 * [21 - Ejercicios: Desestructuración y propagación](./Basic/21-destructuring-spreading-exercises.js)
 * [22 - Clases](./Basic/22-classes.js)
 
-#### [CLASE 6 | 15/08/2024 | Clases (continuación) y manejo de errores](https://www.twitch.tv/videos/2225058195?t=00h16m42s)
+#### [CLASE 6 | 15/08/2024 | Clases (continuación) y manejo de errores](https://www.youtube.com/live/8p6SLAIgwZI?si=MS9o7qIhezx9NTQX&t=902)
 
 Código:
 
@@ -72,6 +72,19 @@ Código:
 * [23 - Ejercicios: Clases](./Basic/23-classes-exercises.js)
 * [24 - Manejo de errores](./Basic/24-error-handling.js)
 * [25 - Ejercicios: Manejo de errores](./Basic/25-error-handling-exercises.js)
+  
+
+#### [CLASE 7 FINAL | 21/08/2024 | Console y módulos](https://www.youtube.com/live/PAnxhBE5kIE?si=V0F_NsKO9lmhhatu&t=555)
+
+Código:
+
+* [26 - Clases](./Basic/26-console-methods.js)
+* [27 - Ejercicios: Clases](./Basic/27-console-methods-exercises.js)
+* [28 - Manejo de errores](./Basic/28-export-modules.js)
+* [29 - Ejercicios: Manejo de errores](./Basic/29-import-modules.js)
+* [30 - Ejercicios: Manejo de errores](./Basic/30-import-external-modules.js)
+* [31 - Ejercicios: Manejo de errores](./Basic/31-modules-exercises.js)
+* [package.json módulos](./package.json)
 
 ## Enlaces de interés
 
@@ -97,7 +110,7 @@ Mi idea es que el curso sea desde cero y para principiantes. Pensado para una pe
 Si la acogida de la comunidad es buena, seguiré creando cursos más avanzados.
 
 #### ¿Se subirá el curso a YouTube?
-Sí, cuando esté finalizado lo subiré editado y en un único vídeo a mi [canal principal](https://youtube.com/@mouredev). Por el momento puedes ver cada clase independiente desde la grabación de [Twitch](https://www.twitch.tv/mouredev/videos) (todas las emisiones quedan guardadas 3 meses).
+Sí, cuando esté finalizado lo subiré editado y en un único vídeo a mi [canal principal](https://youtube.com/@mouredev). Por el momento puedes ver cada clase independiente.
 
 #### ¿Cuánto durará el curso?
 Esta primera parte se centrará en los fundamentos del lenguaje. El curso finalizará cuando se explique todo el temario, es decir, el tiempo que haga falta. Creo que es mucho mejor así que poniendo una fecha límite, así me aseguro de emplear el tiempo que sea necesario para que el aprendizaje sea lo mejor posible.

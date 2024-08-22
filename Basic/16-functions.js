@@ -1,7 +1,7 @@
 /*
 Clase 4 en vídeo | 31/07/2024
 Mapas, bucles y funciones
-https://www.twitch.tv/videos/2212289583?t=00h17m45s
+https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885
 */
 
 // Funciones
