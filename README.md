@@ -78,12 +78,12 @@ Código:
 
 Código:
 
-* [26 - Clases](./Basic/26-console-methods.js)
-* [27 - Ejercicios: Clases](./Basic/27-console-methods-exercises.js)
-* [28 - Manejo de errores](./Basic/28-export-modules.js)
-* [29 - Ejercicios: Manejo de errores](./Basic/29-import-modules.js)
-* [30 - Ejercicios: Manejo de errores](./Basic/30-import-external-modules.js)
-* [31 - Ejercicios: Manejo de errores](./Basic/31-modules-exercises.js)
+* [26 - Console](./Basic/26-console-methods.js)
+* [27 - Ejercicios: Console](./Basic/27-console-methods-exercises.js)
+* [28 - Exportación de módulos](./Basic/28-export-modules.js)
+* [29 - Importación de módulos](./Basic/29-import-modules.js)
+* [30 - Importación de módulos externos](./Basic/30-import-external-modules.js)
+* [31 - Ejercicios: Módulos](./Basic/31-modules-exercises.js)
 * [package.json módulos](./package.json)
 
 ## Enlaces de interés
