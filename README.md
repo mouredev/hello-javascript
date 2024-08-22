@@ -83,8 +83,8 @@ Código:
 * [28 - Exportación de módulos](./Basic/28-export-modules.js)
 * [29 - Importación de módulos](./Basic/29-import-modules.js)
 * [30 - Importación de módulos externos](./Basic/30-import-external-modules.js)
-* [31 - Ejercicios: Módulos](./Basic/31-modules-exercises.js)
-* [package.json módulos](./package.json)
+* [31 - Ejercicios: Módulos](./Basic/31-modules-exercises.cjs)
+* [package.json módulos](./Basic/package.json)
 
 ## Enlaces de interés
 
