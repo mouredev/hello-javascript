@@ -52,7 +52,7 @@ try {
 
 // throw
 
-// throw new Error("Se ha producido un error");
+// throw new Error("Se ha producido un error")
 
 function sumIntegers(a, b) {
     if (typeof a !== "number" || typeof b !== "number") {
