@@ -8,6 +8,23 @@ https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885
 
 // 1. Crea un bucle que imprima los números del 1 al 20
 
+/* For example */
+for (let index = 1; index < 21; index++) {
+  console.log(index);
+}
+
+console.log("\n");
+
+/* While example */
+let count = 0;
+let numbers = 1;
+
+while (count < 20) {
+  console.log(numbers);
+  count++;
+  numbers++;
+}
+
 // 2. Crea un bucle que sume todos los números del 1 al 100 y muestre el resultado
 
 // 3. Crea un bucle que imprima todos los números pares entre 1 y 50
