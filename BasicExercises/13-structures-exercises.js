@@ -58,8 +58,59 @@ console.log(bookSet);
 
 // 7. Crea un mapa que asocie el número del mes a su nombre
 
+let monthsMap = new Map([
+  [1, "January"],
+  [2, "February"],
+  [3, "March"],
+  [4, "April"],
+  [5, "May"],
+  [6, "June"],
+  [7, "July"],
+  [8, "August"],
+  [9, "September"],
+  [10, "October"],
+  [11, "November"],
+  [12, "December"],
+]);
+console.log(monthsMap);
+console.log(monthsMap.get(1));
+
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
+
+if (monthsMap.has(5)) {
+  console.log(monthsMap.get(5));
+} else {
+  console.log("The number 5 month is not present");
+}
 
 // 9. Añade al mapa una clave con un array que almacene los meses de verano
 
+let summerMonths = ["June", "July", "August"];
+monthsMap.set("Summer", summerMonths);
+
+console.log(monthsMap);
+
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
+
+let playersFCB = [
+  "Lewandosky",
+  "Raphina",
+  "Lamine",
+  "Pedri",
+  "Marc",
+  "Gavi",
+  "Kounde",
+  "Pau",
+  "Iñigo",
+  "Alejandro",
+  "Iñaky",
+];
+console.log(`Playes FC Barcelona -Array-: ${playersFCB}.`);
+
+let playersSet = new Set(playersFCB);
+
+console.log(playersSet);
+
+let playersMap = new Map([["Players", playersSet]]);
+
+console.log(playersMap);
