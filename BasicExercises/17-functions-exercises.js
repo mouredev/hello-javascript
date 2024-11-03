@@ -150,7 +150,7 @@ const commonValues = (array1, array2) => {
     let elementsCommon = []
 
     for (const element of array1) {
-        /*if (array2.includes(element)) {
+        /*if (array2.includes(element)) {  // Version simple con includes
       elementsCommon.push(element)
     }*/
         for (const values of array2) {
