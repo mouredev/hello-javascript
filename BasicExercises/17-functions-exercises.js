@@ -183,8 +183,60 @@ console.log(commonValues(wordsArray, calles))
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 
+/* High superior orden */
+function repeat(arrayNumbers, action) {
+    for (let index = 0; index < arrayNumbers.length; index++) {
+        action(arrayNumbers[index])
+    }
+}
+
+let numbersInt = [4, 3, 6, 9, 20, 33, 15, 9999, 11, 27, 4]
+let totalPar = 0
+repeat(numbersInt, (index) => {
+    if (index % 2 === 0) {
+        totalPar += index
+    }
+    return totalPar
+})
+
+console.log("Par total sum: ", totalPar)
+
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
 
+const numSqrt = (index) => {
+    let emptyArray = []
+    index.forEach((element) => {
+        emptyArray.push(Math.pow(element, 2))
+    })
+    return emptyArray
+}
+let arregloNumeros = [24, 13, 86, 1239, 20, 33, 15, 9999, 11, 27, 4]
+
+console.log(numSqrt(arregloNumeros))
+
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
+
+/*Reverse use*/
+const inverseText = (str) => {
+    let strToArray = String(str).split(" ")
+    let finalArray = [] //inverse elements array
+    finalArray.push(strToArray.reverse().join(" "))
+    return finalArray
+}
+
+/*Manual reverse */
+const inverseText2 = (str) => {
+    let strToArray2 = String(str).split(" ")
+    let finalArray2 = [] //inverse elements array
+    for (value of strToArray2) {
+    }
+
+    return finalArray2
+}
+
+let iaText =
+    "Las IA, o inteligencias artificiales, son sistemas informáticos diseñados para realizar tareas que normalmente requieren inteligencia humana, como el aprendizaje, la percepción, el razonamiento y la toma de decisiones. Estos sistemas utilizan algoritmos y datos para simular capacidades humanas y mejorar la eficiencia en diversas áreas, como la medicina, la manufactura, el comercio y más."
+
+console.log("Array reversed: " + inverseText(iaText))
 
 // 10. Crea una función que calcule el factorial de un número dado
