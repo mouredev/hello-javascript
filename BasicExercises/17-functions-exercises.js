@@ -142,7 +142,27 @@ console.log(strUpperCase(strArray))
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
 
-const isPrim = (number) => {}
+const isPrim = (number) => {
+    //The numbers < or = 1 don't prim
+    if (number <= 1) {
+        return false
+    }
+    for (let index = 2; index <= Math.sqrt(number); index++) {
+        if (index % 2 === 0) {
+            //If divide by 2 is not prim
+            return false
+        }
+    }
+
+    // If for return
+    return true
+}
+
+let testNumber = 4
+// Expected not a prim number
+console.log(
+    `Testing prim number: ${testNumber} \nResult: ${isPrim(testNumber) ? "It's a prim number" : "Not a prim number"}`
+)
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
