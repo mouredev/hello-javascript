@@ -237,16 +237,6 @@ const inverseText2 = (str) => {
     }
     console.log(emptyWord)
     return emptyWord
-    /*let finalArray2 = [] //inverse elements array
-    for (value of strToArray2) {
-        let emptyWord = ""
-        for (let index = value.length - 1; index >= 0; index--) {
-            emptyWord += value[index]
-            console.log(emptyWord)
-        }
-        finalArray2.push(value[index])
-    }
-    return finalArray2*/
 }
 
 let iaText =
