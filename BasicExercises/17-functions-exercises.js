@@ -142,6 +142,8 @@ console.log(strUpperCase(strArray))
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
 
+const isPrim = (number) => {}
+
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
 /* Sin el método includes de array */
