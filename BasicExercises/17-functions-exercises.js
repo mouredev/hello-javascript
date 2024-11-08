@@ -220,23 +220,40 @@ console.log(numSqrt(arregloNumeros))
 const inverseText = (str) => {
     let strToArray = String(str).split(" ")
     let finalArray = [] //inverse elements array
+    let newStr = "" //inverse element str
     finalArray.push(strToArray.reverse().join(" "))
-    return finalArray
+    for (let index = 0; index < finalArray.length; index++) {
+        newStr += finalArray[index]
+    }
+    return newStr
 }
 
 /*Manual reverse */
 const inverseText2 = (str) => {
-    let strToArray2 = String(str).split(" ")
-    let finalArray2 = [] //inverse elements array
-    for (value of strToArray2) {
+    let strToInvert = str
+    let emptyWord = ""
+    for (let index = strToInvert.length - 1; index >= 0; index--) {
+        emptyWord += strToInvert[index]
     }
-
-    return finalArray2
+    console.log(emptyWord)
+    return emptyWord
+    /*let finalArray2 = [] //inverse elements array
+    for (value of strToArray2) {
+        let emptyWord = ""
+        for (let index = value.length - 1; index >= 0; index--) {
+            emptyWord += value[index]
+            console.log(emptyWord)
+        }
+        finalArray2.push(value[index])
+    }
+    return finalArray2*/
 }
 
 let iaText =
     "Las IA, o inteligencias artificiales, son sistemas informáticos diseñados para realizar tareas que normalmente requieren inteligencia humana, como el aprendizaje, la percepción, el razonamiento y la toma de decisiones. Estos sistemas utilizan algoritmos y datos para simular capacidades humanas y mejorar la eficiencia en diversas áreas, como la medicina, la manufactura, el comercio y más."
 
-console.log("Array reversed: " + inverseText(iaText))
+console.log("Text reversed: " + inverseText(iaText))
+
+console.log("Text reversed manual version: " + inverseText2(iaText))
 
 // 10. Crea una función que calcule el factorial de un número dado
