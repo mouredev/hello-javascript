@@ -7,7 +7,12 @@ https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885
 // NOTA: Explora diferentes sintaxis de funciones para resolver los ejercicios
 
 // 1. Crea una función que reciba dos números y devuelva su suma
-
+/**
+ *
+ * @param {number} number1 Un número
+ * @param {number} number2 Un número
+ * @returns {number} Sumatoria de dos números
+ */
 const sumNumbers = (number1, number2) => {
     /* Declarative function */
     return number1 + number2
@@ -17,6 +22,11 @@ console.log(sumNumbers(100, 36))
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 
+/**
+ *
+ * @param {array} array Un array de números
+ * @returns {number} El mayor número del arreglo
+ */
 const maxNumber = (array) => {
     let bigNumber = -Infinity
     for (const element of array) {
@@ -32,7 +42,11 @@ let numbersArray = [100, 35, 87, 16, 777, 56, 91, 1111111, 37, -5, 34, -8973]
 console.log(maxNumber(numbersArray))
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
-
+/**
+ *
+ * @param {string} strValue Una cadena de texto
+ * @returns {number} Cantidad de vocales que contiene el string
+ */
 const vocalTotal = (strValue) => {
     /*Case I*/
     let vocalArray = ["a", "e", "i", "o", "u"]
@@ -104,7 +118,11 @@ let dataVocals = [
 console.table(dataVocals)
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
-
+/**
+ *
+ * @param {array} array Un arreglo de cadenas de texto
+ * @returns {array} Un arreglo de cadenas de texto en mayúscula
+ */
 const strUpperCase = (array) => {
     let upperCaseArray = []
     array.forEach((element) => {
@@ -141,7 +159,11 @@ let strArray = [
 console.log(strUpperCase(strArray))
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
-
+/**
+ *
+ * @param {number} number Un número se comprobará si es primo o no
+ * @returns {boolean} Un boolean
+ */
 const isPrim = (number) => {
     //The numbers < or = 1 don't prim
     if (number <= 1) {
@@ -167,7 +189,12 @@ console.log(
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
 /* Sin el método includes de array */
-
+/**
+ * Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
+ * @param {array} array1 Una arreglo cualquiera
+ * @param {array} array2 Una arreglo cualquiera
+ * @returns {array} Un arreglo que contiene los elementos comunes entre ambos arreglos
+ */
 const commonValues = (array1, array2) => {
     let elementsCommon = []
 
@@ -206,6 +233,13 @@ console.log(commonValues(wordsArray, calles))
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 
 /* High superior orden */
+
+/**
+ * Una función que recibe un array de números y devuelva la suma de todos los números pares
+ * @param {array} arrayNumbers Un arreglo de números
+ * @param {Function} action Una función de comprobación
+ * @returns {number} Suma de todos los números pares
+ */
 function repeat(arrayNumbers, action) {
     for (let index = 0; index < arrayNumbers.length; index++) {
         action(arrayNumbers[index])
@@ -224,10 +258,14 @@ repeat(numbersInt, (index) => {
 console.log("Par total sum: ", totalPar)
 
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
-
-const numSqrt = (index) => {
+/**
+ * Una función que recibe un array de números y devuelva un nuevo array con cada número elevado al cuadrado
+ * @param {array} arreglo Un arreglo de números
+ * @returns {array} array con cada número elevado al cuadrado
+ */
+const numSqrt = (arreglo) => {
     let emptyArray = []
-    index.forEach((element) => {
+    arreglo.forEach((element) => {
         emptyArray.push(Math.pow(element, 2))
     })
     return emptyArray
@@ -239,6 +277,12 @@ console.log(numSqrt(arregloNumeros))
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
 
 /*Reverse use*/
+
+/**
+ * Una función que recibe una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
+ * @param {string} str Una cadena de texto
+ * @returns {string} Devuelve la misma cadena de texto con las palabras en orden inverso
+ */
 const inverseText = (str) => {
     let strToArray = String(str).split(" ")
     let finalArray = [] //inverse elements array
@@ -269,3 +313,17 @@ console.log("Text reversed: " + inverseText(iaText))
 console.log("Text reversed manual version: " + inverseText2(iaText))
 
 // 10. Crea una función que calcule el factorial de un número dado
+
+/**
+ * Calcula el factorial de un número.
+ * @param {number} anumber El número del que se calculará el factorial.
+ * @returns {number} El factorial del número.
+ */
+const factorialExercise = (anumber) => {
+    let factor = 1
+    if (anumber === 0 || anumber === 1) factor = 1
+    if (anumber > 1) {
+        factor *= factorialExercise(anumber - 1)
+    }
+    return factor
+}
