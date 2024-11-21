@@ -7,13 +7,11 @@ https://www.youtube.com/live/SBXEpAx_y_Q?si=Sbqqa2-_eGwsUkH-&t=958
 // Clases
 
 class Person {
-
     constructor(name, age, alias) {
         this.name = name
         this.age = age
         this.alias = alias
     }
-
 }
 
 // Sintaxis
@@ -29,13 +27,11 @@ console.log(typeof person)
 // Valores por defecto
 
 class DefaultPerson {
-
     constructor(name = "Sin nombre", age = 0, alias = "Sin alias") {
         this.name = name
         this.age = age
         this.alias = alias
     }
-
 }
 
 let person3 = new DefaultPerson("Brais", 37)
@@ -54,7 +50,6 @@ console.log(person3.alias)
 // Funciones en clases
 
 class PersonWithMethod {
-
     constructor(name, age, alias) {
         this.name = name
         this.age = age
@@ -64,7 +59,6 @@ class PersonWithMethod {
     walk() {
         console.log("La persona camina.")
     }
-
 }
 
 let person4 = new PersonWithMethod("Brais", 37, "MoureDev")
@@ -73,7 +67,6 @@ person4.walk()
 // Propiedades privadas
 
 class PrivatePerson {
-
     #bank
 
     constructor(name, age, alias, bank) {
@@ -86,13 +79,12 @@ class PrivatePerson {
     pay() {
         this.#bank
     }
-
 }
 
 let person5 = new PrivatePerson("Brais", 37, "MoureDev", "IBAN123456789")
 
 // No podemos acceder
-// console.log(person5.bank) 
+// console.log(person5.bank)
 // person5.bank = "new IBAN123456789" // bank no es #bank
 
 console.log(person5)
@@ -100,7 +92,6 @@ console.log(person5)
 // Getters y Setters
 
 class GetSetPerson {
-
     #name
     #age
     #alias
@@ -117,10 +108,12 @@ class GetSetPerson {
         return this.#name
     }
 
+    /**
+     * @param {String} bank New bank information
+     */
     set bank(bank) {
         this.#bank = bank
     }
-
 }
 
 person6 = new GetSetPerson("Brais", 37, "MoureDev", "IBAN123456789")
@@ -139,7 +132,6 @@ https://www.twitch.tv/videos/2225058195?t=00h16m42s
 // Herencia
 
 class Animal {
-
     constructor(name) {
         this.name = name
     }
@@ -147,11 +139,9 @@ class Animal {
     sound() {
         console.log("El animal emite un sonido genérico")
     }
-
 }
 
 class Dog extends Animal {
-
     sound() {
         console.log("Guau!")
     }
@@ -159,11 +149,9 @@ class Dog extends Animal {
     run() {
         console.log("El perro corre")
     }
-
 }
 
 class Fish extends Animal {
-
     constructor(name, size) {
         super(name)
         this.size = size
@@ -172,7 +160,6 @@ class Fish extends Animal {
     swim() {
         console.log("El pez nada")
     }
-
 }
 
 let myDog = new Dog("MoureDog")
@@ -186,7 +173,6 @@ myFish.sound()
 // Métodos estáticos
 
 class MathOperations {
-
     static sum(a, b) {
         return a + b
     }
