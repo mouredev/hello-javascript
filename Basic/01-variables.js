@@ -1,7 +1,6 @@
 /*
-Clase 1 en vídeo | 10/07/2024
-Introducción, instalación, hola mundo y variables
-https://www.youtube.com/live/hoULS5isDck?si=qtcStT34Ef8ETBmB&t=915
+Clase 16 - Variables
+Vídeo: https://youtu.be/1glVfFxj8a4?t=3049
 */
 
 // var

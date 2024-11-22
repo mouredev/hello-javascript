@@ -1,7 +1,6 @@
 /*
-Clase 6 en vídeo | 15/08/2024
-Clases (continuación) y manejo de errores
-https://www.youtube.com/live/8p6SLAIgwZI?si=MS9o7qIhezx9NTQX&t=902
+Clase 41 - Ejercicios: Manejo de errores
+Vídeo: https://youtu.be/1glVfFxj8a4?t=20392
 */
 
 // 1. Captura una excepción utilizando try-catch

@@ -1,7 +1,6 @@
 /*
-Clase 5 en vídeo | 07/08/2024
-Objetos, desestructuración, propagación y clases
-https://www.youtube.com/live/SBXEpAx_y_Q?si=Sbqqa2-_eGwsUkH-&t=958
+Clase 37 - Clases
+Vídeo: https://youtu.be/1glVfFxj8a4?t=16864
 */
 
 // Clases
@@ -131,9 +130,8 @@ console.log(person6.name)
 person6.bank = "new IBAN123456789"
 
 /*
-Clase 6 en vídeo | 15/08/2024
-Clases (continuación) y manejo de errores
-https://www.twitch.tv/videos/2225058195?t=00h16m42s
+Clase 38 - Herencia de clases
+Vídeo: https://youtu.be/1glVfFxj8a4?t=17999
 */
 
 // Herencia

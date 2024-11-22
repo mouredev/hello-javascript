@@ -1,7 +1,6 @@
 /*
-Clase 2 en vídeo | 17/07/2024
-Tipos de datos, operadores y strings
-https://www.youtube.com/live/euVbF1eatEY?si=nHS3QznAlA_C39NK&t=808
+Clase 17 - Tipos de datos
+Vídeo: https://youtu.be/1glVfFxj8a4?t=3599
 */
 
 // Tipos de datos primitivos

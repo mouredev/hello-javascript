@@ -1,7 +1,6 @@
 /*
-Clase 3 en vídeo | 24/07/2024
-Condicionales, arrays y sets
-https://www.youtube.com/live/XCNjoIoO3Ws?si=3XCjdZ9r41JID-by&t=978
+Clase 25 - Arrays
+Vídeo: https://youtu.be/1glVfFxj8a4?t=8741
 */
 
 // Array

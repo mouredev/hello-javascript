@@ -1,7 +1,6 @@
 /*
-Clase 4 en vídeo | 31/07/2024
-Mapas, bucles y funciones
-https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885
+Clase 30 - Ejercicios: Bucles
+Vídeo: https://youtu.be/1glVfFxj8a4?t=12732
 */
 
 // NOTA: Explora diferentes sintaxis de bucles para resolver los ejercicios

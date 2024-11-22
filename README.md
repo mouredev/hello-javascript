@@ -11,80 +11,61 @@
 
 ## Curso finalizado (por el momento)
 
-### Una vez editado se subirá como un único vídeo a [YouTube](https://youtube.com/@mouredev). Por el momento puedes ver los directos individuales.
-#### El curso continuará con una parte intermedia. Lo anunciaré en redes y actualizaré el repo con el nuevo contenido.
+#### El curso continuará con una parte intermedia próximamente. Lo anunciaré en redes y actualizaré el repo con el nuevo contenido.
 
 ## Clases en vídeo
 
-#### [CLASE 1 | 10/07/2024 | Introducción, instalación, hola mundo y variables](https://www.youtube.com/live/hoULS5isDck?si=qtcStT34Ef8ETBmB&t=915)
+### Curso de fundamentos desde cero
 
-Código:
+<a href="https://youtu.be/1glVfFxj8a4"><img src="http://i3.ytimg.com/vi/1glVfFxj8a4/maxresdefault.jpg" style="height: 50%; width:50%;"/></a>
 
-* [00 - Hola Mundo](./Basic/00-helloworld.js)
-* [01 - Variables](./Basic/01-variables.js)
-
-#### [CLASE 2 | 17/07/2024 | Tipos de datos, operadores y strings](https://www.youtube.com/live/euVbF1eatEY?si=nHS3QznAlA_C39NK&t=808)
-
-Código:
-
-* [02 - Tipos de datos](./Basic/02-datatypes.js)
-* [03 - Ejercicios: Primeros pasos](./Basic/03-beginner-exercises.js)
-* [04 - Operadores](./Basic/04-operators.js)
-* [05 - Ejercicios: Operadores](./Basic/05-operators-exercises.js)
-* [06 - Strings](./Basic/06-strings.js)
-* [07 - Ejercicios: Strings](./Basic/07-strings-exercises.js)
-
-#### [CLASE 3 | 24/07/2024 | Condicionales, arrays y sets](https://www.youtube.com/live/XCNjoIoO3Ws?si=3XCjdZ9r41JID-by&t=978)
-
-Código:
-
-* [08 - Condicionales](./Basic/08-conditionals.js)
-* [09 - Ejercicios: Condicionales](./Basic/09-conditionals-exercises.js)
-* [10 - Array](./Basic/10-array.js)
-* [11 - Set](./Basic/11-set.js)
-
-#### [CLASE 4 | 31/07/2024 | Mapas, bucles y funciones](https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885)
-
-Código:
-
-* [12 - Map](./Basic/12-map.js)
-* [13 - Ejercicios: Estructuras](./Basic/13-structures-exercises.js)
-* [14 - Bucles](./Basic/14-loops.js)
-* [15 - Ejercicios: Bucles](./Basic/15-loops-exercises.js)
-* [16 - Funciones](./Basic/16-functions.js)
-* [17 - Ejercicios: Funciones](./Basic/17-functions-exercises.js)
-
-#### [CLASE 5 | 07/08/2024 | Objetos, desestructuración, propagación y clases](https://www.youtube.com/live/SBXEpAx_y_Q?si=Sbqqa2-_eGwsUkH-&t=958)
-
-Código:
-
-* [18 - Objetos](./Basic/18-objects.js)
-* [19 - Ejercicios: Objetos](./Basic/19-objects-exercises.js)
-* [20 - Desestructuración y propagación](./Basic/20-destructuring-spreading.js)
-* [21 - Ejercicios: Desestructuración y propagación](./Basic/21-destructuring-spreading-exercises.js)
-* [22 - Clases](./Basic/22-classes.js)
-
-#### [CLASE 6 | 15/08/2024 | Clases (continuación) y manejo de errores](https://www.youtube.com/live/8p6SLAIgwZI?si=MS9o7qIhezx9NTQX&t=902)
-
-Código:
-
-* [22 - Clases](./Basic/22-classes.js)
-* [23 - Ejercicios: Clases](./Basic/23-classes-exercises.js)
-* [24 - Manejo de errores](./Basic/24-error-handling.js)
-* [25 - Ejercicios: Manejo de errores](./Basic/25-error-handling-exercises.js)
-  
-
-#### [CLASE 7 FINAL | 21/08/2024 | Console y módulos](https://www.youtube.com/live/PAnxhBE5kIE?si=V0F_NsKO9lmhhatu&t=555)
-
-Código:
-
-* [26 - Console](./Basic/26-console-methods.js)
-* [27 - Ejercicios: Console](./Basic/27-console-methods-exercises.js)
-* [28 - Exportación de módulos](./Basic/28-export-modules.js)
-* [29 - Importación de módulos](./Basic/29-import-modules.js)
-* [30 - Importación de módulos externos](./Basic/30-import-external-modules.cjs)
-* [31 - Ejercicios: Módulos](./Basic/31-modules-exercises.js)
-* [package.json módulos](./Basic/package.json)
+* [Introducción](https://youtu.be/1glVfFxj8a4)
+* [1 - Contexto](https://youtu.be/1glVfFxj8a4?t=174)
+* [2 - Historia](https://youtu.be/1glVfFxj8a4?t=322)
+* [3 - JavaScript y Java](https://youtu.be/1glVfFxj8a4?t=665)
+* [4 - Utilización](https://youtu.be/1glVfFxj8a4?t=931)
+* [5 - Especificación ECMAScript](https://youtu.be/1glVfFxj8a4?t=1017)
+* [6 - Motor V8](https://youtu.be/1glVfFxj8a4?t=1293)
+* [7 - Referencia](https://youtu.be/1glVfFxj8a4?t=1403)
+* [8 - Ejercicios prácticos](https://youtu.be/1glVfFxj8a4?t=1621)
+* [9 - Versión](https://youtu.be/1glVfFxj8a4?t=1705)
+* [10 - Explorador web](https://youtu.be/1glVfFxj8a4?t=1768)
+* [11 - Playground](https://youtu.be/1glVfFxj8a4?t=1893)
+* [12 - Instalación](https://youtu.be/1glVfFxj8a4?t=1988)
+* [13 - Editor de código](https://youtu.be/1glVfFxj8a4?t=2256)
+* [14 - Buenas prácticas](https://youtu.be/1glVfFxj8a4?t=2311)
+* [15 - Hola mundo](https://youtu.be/1glVfFxj8a4?t=2390) | [Código](./Basic/00-helloworld.js)
+* [16 - Variables](https://youtu.be/1glVfFxj8a4?t=3049) | [Código](./Basic/01-variables.js)
+* [17 - Tipos de datos](https://youtu.be/1glVfFxj8a4?t=3599) | [Código](./Basic/02-datatypes.js)
+* [18 - Ejercicios: primeros pasos](https://youtu.be/1glVfFxj8a4?t=4733) | [Ejercicios](./Basic/03-beginner-exercises.js)
+* [19 - Operadores](https://youtu.be/1glVfFxj8a4?t=4937) | [Código](./Basic/04-operators.js)
+* [20 - Ejercicios: Operadores](https://youtu.be/1glVfFxj8a4?t=6458) | [Ejercicios](./Basic/05-operators-exercises.js)
+* [21 - Strings](https://youtu.be/1glVfFxj8a4?t=6565) | [Código](./Basic/06-strings.js)
+* [22 - Ejercicios: Strings](https://youtu.be/1glVfFxj8a4?t=7226) | [Ejercicios](./Basic/07-strings-exercises.js)
+* [23 - Condicionales](https://youtu.be/1glVfFxj8a4?t=7277) | [Código](./Basic/08-conditionals.js)
+* [24 - Ejercicios: Condicionales](https://youtu.be/1glVfFxj8a4?t=8652) | [Ejercicios](./Basic/09-conditionals-exercises.js)
+* [25 - Arrays](https://youtu.be/1glVfFxj8a4?t=8741) | [Código](./Basic/10-array.js)
+* [26 - Sets](https://youtu.be/1glVfFxj8a4?t=9952) | [Código](./Basic/11-set.js)
+* [27 - Maps](https://youtu.be/1glVfFxj8a4?t=10755) | [Código](./Basic/12-map.js)
+* [28 - Ejercicios: Estructuras](https://youtu.be/1glVfFxj8a4?t=11451) | [Ejercicios](./Basic/13-structures-exercises.js)
+* [29 - Bucles](https://youtu.be/1glVfFxj8a4?t=11575) | [Código](./Basic/14-loops.js)
+* [30 - Ejercicios: Bucles](https://youtu.be/1glVfFxj8a4?t=12732) | [Ejercicios](./Basic/15-loops-exercises.js)
+* [31 - Funciones](https://youtu.be/1glVfFxj8a4?t=12829) | [Código](./Basic/16-functions.js)
+* [32 - Ejercicios: Funciones](https://youtu.be/1glVfFxj8a4?t=14146) | [Ejercicios](./Basic/17-functions-exercises.js)
+* [33 - Objetos](https://youtu.be/1glVfFxj8a4?t=14229) | [Código](./Basic/18-objects.js)
+* [34 - Ejercicios: Objetos](https://youtu.be/1glVfFxj8a4?t=15675) | [Ejercicios](./Basic/19-objects-exercises.js)
+* [35 - Desestructuración y propagación](https://youtu.be/1glVfFxj8a4?t=15747) | [Código](./Basic/20-destructuring-spreading.js)
+* [36 - Ejercicios: Desestructuración y propagación](https://youtu.be/1glVfFxj8a4?t=16802) | [Ejercicios](./Basic/21-destructuring-spreading-exercises.js)
+* [37 - Clases](https://youtu.be/1glVfFxj8a4?t=16864) | [Código](./Basic/22-classes.js)
+* [38 - Herencia de clases](https://youtu.be/1glVfFxj8a4?t=17999) | [Código](./Basic/22-classes.js)
+* [39 - Ejercicios: Clases](https://youtu.be/1glVfFxj8a4?t=18630) | [Ejercicios](./Basic/23-classes-exercises.js)
+* [40 - Manejo de errores](https://youtu.be/1glVfFxj8a4?t=18751) | [Código](./Basic/24-error-handling.js)
+* [41 - Ejercicios: Manejo de errores](https://youtu.be/1glVfFxj8a4?t=20392) | [Ejercicios](./Basic/25-error-handling-exercises.js)
+* [42 - Console](https://youtu.be/1glVfFxj8a4?t=20444) | [Código](./Basic/26-console-methods.js)
+* [43 - Ejercicios: Console](https://youtu.be/1glVfFxj8a4?t=21421) | [Ejercicios](./Basic/27-console-methods-exercises.js)
+* [44 - Módulos](https://youtu.be/1glVfFxj8a4?t=21480) | [Código exportación](./Basic/28-export-modules.js) | [Código importación](./Basic/29-import-modules.js) | [Código externos](./Basic/30-import-external-modules.cjs)
+* [45 - Ejercicios: Módulos](https://youtu.be/1glVfFxj8a4?t=22720) | [Ejercicios](./Basic/31-modules-exercises.js) | [package.json](./Basic/package.json)
+* [Despedida](https://youtu.be/1glVfFxj8a4?t=22776)
 
 ## Enlaces de interés
 
@@ -101,6 +82,15 @@ Código:
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Guía de estilo](https://google.github.io/styleguide/jsguide.html)
 
+## Únete al campus de programación de la comunidad
+
+![https://mouredev.pro](./Images/pro.jpg)
+
+#### Te presento [mouredev pro](https://mouredev.pro), mi proyecto más importante para ayudarte a estudiar programación y desarrollo de software de manera diferente.
+
+> **¿Buscas un extra?** Aquí encontrarás este y otros cursos editados por lecciones individuales, para avanzar a tu ritmo y guardar el progreso. También dispondrás de ejercicios y correcciones, test para validar tus conocimientos, examen y certificado público de finalización, soporte, foro de estudiantes, reunionnes grupales, cursos exclusivos y mucho más.
+> 
+> Entra en **[mouredev.pro](https://mouredev.pro)** y utiliza el cupón **"JAVASCRIPT"** con un 10% de descuento en tu primera suscripción.
 
 ## Preguntas frecuentes
 
@@ -109,11 +99,8 @@ Mi idea es que el curso sea desde cero y para principiantes. Pensado para una pe
 
 Si la acogida de la comunidad es buena, seguiré creando cursos más avanzados.
 
-#### ¿Se subirá el curso a YouTube?
-Sí, cuando esté finalizado lo subiré editado y en un único vídeo a mi [canal principal](https://youtube.com/@mouredev). Por el momento puedes ver cada clase independiente.
-
-#### ¿Cuánto durará el curso?
-Esta primera parte se centrará en los fundamentos del lenguaje. El curso finalizará cuando se explique todo el temario, es decir, el tiempo que haga falta. Creo que es mucho mejor así que poniendo una fecha límite, así me aseguro de emplear el tiempo que sea necesario para que el aprendizaje sea lo mejor posible.
+#### ¿Este curso va a continuar?
+Sí, próximamente comenzaré un nuevo bloque de clases intermedias.
 
 #### ¿Existe algún lugar donde consultar dudas?
 He creado un canal llamado "JavaScript" en el [servidor de Discord](https://discord.gg/mouredev) de la comunidad. Allí puedes consultar dudas y ayudar al resto de miembros. Así nos beneficiamos tod@s.
@@ -136,5 +123,5 @@ Soy ingeniero de software desde 2010. Desde 2018 combino mi trabajo desarrolland
 Si quieres unirte a nuestra comunidad de desarrollo, aprender programación, mejorar tus habilidades y ayudar a la continuidad del proyecto, puedes encontrarnos en:
 
 [![Twitch](https://img.shields.io/badge/Twitch-Programación_en_directo-9146FF?style=for-the-badge&logo=twitch&logoColor=white&labelColor=101010)](https://twitch.tv/mouredev)
-[![Discord](https://img.shields.io/badge/Discord-Servidor_de_la_comunidad-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=101010)](https://mouredev.com/discord)
-[![Link](https://img.shields.io/badge/Links_de_interés-moure.dev-39E09B?style=for-the-badge&logo=Linktree&logoColor=white&labelColor=101010)](https://moure.dev) [![Web](https://img.shields.io/badge/GitHub-MoureDev-14a1f0?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/mouredev)
+[![Discord](https://img.shields.io/badge/Discord-Servidor_de_la_comunidad-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=101010)](https://mouredev.com/discord) [![Pro](https://img.shields.io/badge/Cursos-mouredev.pro-FF5500?style=for-the-badge&logo=gnometerminal&logoColor=white&labelColor=101010)](https://moure.dev)
+[![Link](https://img.shields.io/badge/Links_de_interés-moure.dev-14a1f0?style=for-the-badge&logo=Linktree&logoColor=white&labelColor=101010)](https://moure.dev) [![Web](https://img.shields.io/badge/GitHub-MoureDev-087ec4?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/mouredev)

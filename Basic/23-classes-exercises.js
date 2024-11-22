@@ -1,7 +1,6 @@
 /*
-Clase 6 en vídeo | 15/08/2024
-Clases (continuación) y manejo de errores
-https://www.youtube.com/live/8p6SLAIgwZI?si=MS9o7qIhezx9NTQX&t=902
+Clase 39 - Ejercicios: Clases
+Vídeo: https://youtu.be/1glVfFxj8a4?t=18630
 */
 
 // 1. Crea una clase que reciba dos propiedades

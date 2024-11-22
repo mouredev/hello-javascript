@@ -1,7 +1,6 @@
 /*
-Clase 7 en vídeo | 21/08/2024
-Console y módulos
-https://www.youtube.com/live/PAnxhBE5kIE?si=V0F_NsKO9lmhhatu&t=555
+Clase 44 - Módulos
+Vídeo: https://youtu.be/1glVfFxj8a4?t=21480
 */
 
 // Importación de módulos

@@ -1,7 +1,6 @@
 /*
-Clase 5 en vídeo | 07/08/2024
-Objetos, desestructuración, propagación y clases
-https://www.youtube.com/live/SBXEpAx_y_Q?si=Sbqqa2-_eGwsUkH-&t=958
+Clase 35 - Desestructuración y propagación
+Vídeo: https://youtu.be/1glVfFxj8a4?t=15747
 */
 
 let myArray = [1, 2, 3, 4]
