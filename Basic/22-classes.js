@@ -14,10 +14,21 @@ class Person {
     }
 }
 
+class Car {
+    constructor(type, color, licensePlate) {
+        this.type = type
+        this.color = color
+        this.licensePlate = licensePlate
+    }
+}
+
 // Sintaxis
 
 let person = new Person("Brais", 37, "MoureDev")
 let person2 = new Person("Brais", 37, "MoureDev")
+
+let ferrari = new Car("Ferrari", "Red", "CB1234")
+console.log(ferrari)
 
 console.log(person)
 console.log(person2)
@@ -45,7 +56,11 @@ console.log(person3["alias"])
 
 person3.alias = "MoureDev"
 
+ferrari.color = "Blue"
+
 console.log(person3.alias)
+
+console.log(ferrari.color)
 
 // Funciones en clases
 
@@ -104,6 +119,9 @@ class GetSetPerson {
         this.#bank = bank
     }
 
+    /**
+     * Returns the name of the person selected
+     */
     get name() {
         return this.#name
     }
@@ -116,7 +134,7 @@ class GetSetPerson {
     }
 }
 
-person6 = new GetSetPerson("Brais", 37, "MoureDev", "IBAN123456789")
+let person6 = new GetSetPerson("Brais", 37, "MoureDev", "IBAN123456789")
 
 console.log(person6)
 console.log(person6.name)
