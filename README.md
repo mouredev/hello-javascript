@@ -9,16 +9,19 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## 🆕 NUEVO: Curso Intermedio
+## 🆕 NUEVO: Curso Intermedio [En desarrollo]
 
 <a href="https://twitch.tv/mouredev"><img src="./Images/intermediate.jpg" style="height: 50%; width:50%;"/></a>
 
 ### Curso de fundamentos intermedio (continuación del desde cero). Nueva clase cada semana.
 
-### 🔴 PRÓXIMA CLASE EN DIRECTO: Miércoles 29 de enero a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev)
-### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/3WmpXMQj?event=1331897476873060446)
+#### 🔴 PRÓXIMA CLASE EN DIRECTO: Miércoles 5 de febreto a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
+#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/3WmpXMQj?event=1334269133906382999)
 
-*Aquí encontrarás toda la información de las clases grabadas y el material utilizado.*
+* Clase 1 [29/01/2025] - Funciones avanzadas
+	* [Vídeo](https://www.twitch.tv/videos/2367024319?t=00h08m45s)
+	* [Código](./Intermediate/00-advanced-functions.js)
+	* [Ejericios](./Intermediate/01-advanced-functions-exercises.js)
 
 ## Clases en vídeo
 
