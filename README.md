@@ -15,8 +15,8 @@
 
 ### Curso de fundamentos intermedio (continuación del desde cero). Nueva clase cada semana.
 
-#### 🔴 PRÓXIMA CLASE EN DIRECTO: Miércoles 12 de febreto a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
-#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/876GQ39x?event=1336827032805576714)
+#### 🔴 PRÓXIMA CLASE EN DIRECTO: Miércoles 19 de febrero a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
+#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/umXned72?event=1339346133624946889)
 
 * Clase 1 [29/01/2025] - Funciones avanzadas
 	* [Vídeo](https://www.twitch.tv/videos/2367024319?t=00h08m45s)
@@ -27,6 +27,12 @@
 	* [Vídeo](https://www.twitch.tv/videos/2373300186?t=00h15m32s)
 	* [Código](./Intermediate/02-advanced-structures.js)
 	* [Ejericios](./Intermediate/03-advanced-structures-exercises.js)
+
+* Clase 3 [12/02/2025] - Objetos y Clases avanzadas
+	* [Vídeo](https://www.twitch.tv/videos/2379412787?t=00h21m33s)
+	* [Código Objetos](./Intermediate/04-advanced-objects.js)
+	* [Código Clases](./Intermediate/05-advanced-classes.js)
+	* [Ejericios](./Intermediate/06-advanced-objects-classes-exercises)
 
 ## Clases en vídeo
 
