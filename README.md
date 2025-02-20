@@ -15,8 +15,8 @@
 
 ### Curso de fundamentos intermedio (continuación del desde cero). Nueva clase cada semana.
 
-#### 🔴 PRÓXIMA CLASE EN DIRECTO: Miércoles 19 de febrero a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
-#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/umXned72?event=1339346133624946889)
+#### 🔴 PRÓXIMA CLASE EN DIRECTO: Miércoles 26 de febrero a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
+#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/DuE3fHyV?event=1341887890858442772)
 
 * Clase 1 [29/01/2025] - Funciones avanzadas
 	* [Vídeo](https://www.twitch.tv/videos/2367024319?t=00h08m45s)
@@ -33,6 +33,11 @@
 	* [Código Objetos](./Intermediate/04-advanced-objects.js)
 	* [Código Clases](./Intermediate/05-advanced-classes.js)
 	* [Ejericios](./Intermediate/06-advanced-objects-classes-exercises)
+
+* Clase 4 [19/02/2025] - Programación asíncrona
+	* [Vídeo](https://www.twitch.tv/videos/2385650388?t=00h22m48s)
+	* [Código](./Intermediate/07-async.js)
+	* [Ejericios](./Intermediate/08-async-exercises.js)
 
 ## Clases en vídeo
 
