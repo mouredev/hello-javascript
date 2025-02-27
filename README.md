@@ -15,8 +15,8 @@
 
 ### Curso de fundamentos intermedio (continuación del desde cero). Nueva clase cada semana.
 
-#### 🔴 PRÓXIMA CLASE EN DIRECTO: Miércoles 26 de febrero a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
-#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/DuE3fHyV?event=1341887890858442772)
+#### 🔴 PRÓXIMA CLASE EN DIRECTO: Jueves 6 de marzo a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
+#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/63Q2Ts6p?event=1344414401603833886)
 
 * Clase 1 [29/01/2025] - Funciones avanzadas
 	* [Vídeo](https://www.twitch.tv/videos/2367024319?t=00h08m45s)
@@ -38,6 +38,11 @@
 	* [Vídeo](https://www.twitch.tv/videos/2385650388?t=00h22m48s)
 	* [Código](./Intermediate/07-async.js)
 	* [Ejericios](./Intermediate/08-async-exercises.js)
+
+* Clase 5 [26/02/2025] - Manejo de APIs
+	* [Vídeo](https://www.twitch.tv/videos/2391820998?t=00h17m25s)
+	* [Código](./Intermediate/09-apis.js)
+	* [Ejericios](./Intermediate/10-apis-exercises.js)
 
 ## Clases en vídeo
 
@@ -107,6 +112,8 @@
 * Exploradores: [Chrome](https://www.google.com/intl/es_es/chrome/) | [Brave](https://brave.com/download/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Guía de estilo](https://google.github.io/styleguide/jsguide.html)
+* Clientes HTTP: [Postman](https://postman.com) | [Apidog](https://apidog.com) | [Thunder Client](https://thunderclient.com)
+* APIs: [JSONPlaceholder](https://jsonplaceholder.typicode.com) | [OpenWeather](https://openweathermap.org) | [PokéAPI](https://pokeapi.co)
 
 ## Únete al campus de programación de la comunidad
 
