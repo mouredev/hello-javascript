@@ -15,8 +15,8 @@
 
 ### Curso de fundamentos intermedio (continuación del desde cero). Nueva clase cada semana.
 
-#### 🔴 PRÓXIMA CLASE EN DIRECTO: Jueves 6 de marzo a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
-#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/63Q2Ts6p?event=1344414401603833886)
+#### 🔴 PRÓXIMA CLASE EN DIRECTO: Jueves 12 de marzo a las 20:00h (España) en [Twitch](https://twitch.tv/mouredev) y [YouTube](https://youtube.com/@mouredev)
+#### 🗓️ CONSULTA EL HORARIO POR PAÍS Y CREA UN RECORDATORIO desde [Discord](https://discord.gg/tqsThtGg?event=1347230711693705339)
 
 * Clase 1 [29/01/2025] - Funciones avanzadas
 	* [Vídeo](https://www.twitch.tv/videos/2367024319?t=00h08m45s)
@@ -43,6 +43,13 @@
 	* [Vídeo](https://www.twitch.tv/videos/2391820998?t=00h17m25s)
 	* [Código](./Intermediate/09-apis.js)
 	* [Ejericios](./Intermediate/10-apis-exercises.js)
+
+* Clase 6 [06/03/2025] - Manejo del DOM
+	* [Vídeo](https://www.twitch.tv/videos/2398786900?t=00h11m52s)
+	* [Código](./Intermediate/11-dom.js)
+	* Ejemplo simple: [HTML](./Intermediate/12-dom-example.html) - [JS](./Intermediate/13-dom-example.js)
+	* Ejemplo lista de tareas: [HTML](./Intermediate/14-tasklist.html) - [JS](./Intermediate/15-tasklist.js)
+	* [Ejericios](./Intermediate/16-dom-exercises.js)
 
 ## Clases en vídeo
 
