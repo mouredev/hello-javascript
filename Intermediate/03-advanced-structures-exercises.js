@@ -1,6 +1,6 @@
 /*
 Clase 2 - Estructuras avanzadas (05/02/2025)
-Vídeo: https://www.twitch.tv/videos/2373300186?t=00h15m32s
+Vídeo: https://www.twitch.tv/videos/2403685940?t=00h15m32s
 */
 
 // 1. Utiliza map, filter y reduce para crear un ejemplo diferente al de la lección

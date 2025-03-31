@@ -1,6 +1,6 @@
 /*
 Clase 1 - Funciones avanzadas (29/01/2025)
-Vídeo: https://www.twitch.tv/videos/2367024319?t=00h08m45s
+Vídeo: https://www.twitch.tv/videos/2403685765?t=00h08m45s
 */
 
 // 1. Crea una función que retorne a otra función

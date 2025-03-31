@@ -16,40 +16,40 @@
 ### Curso de fundamentos intermedio (continuación del desde cero). 
 
 * Clase 1 [29/01/2025] - Funciones avanzadas
-	* [Vídeo](https://www.twitch.tv/videos/2367024319?t=00h08m45s)
+	* [Vídeo](https://www.twitch.tv/videos/2403685765?t=00h08m45s)
 	* [Código](./Intermediate/00-advanced-functions.js)
 	* [Ejercicios](./Intermediate/01-advanced-functions-exercises.js)
 
 * Clase 2 [05/02/2025] - Estructuras avanzadas
-	* [Vídeo](https://www.twitch.tv/videos/2373300186?t=00h15m32s)
+	* [Vídeo](https://www.twitch.tv/videos/2403685940?t=00h15m32s)
 	* [Código](./Intermediate/02-advanced-structures.js)
 	* [Ejercicios](./Intermediate/03-advanced-structures-exercises.js)
 
 * Clase 3 [12/02/2025] - Objetos y Clases avanzadas
-	* [Vídeo](https://www.twitch.tv/videos/2379412787?t=00h21m33s)
+	* [Vídeo](https://www.twitch.tv/videos/2403685993?t=00h21m33s)
 	* [Código Objetos](./Intermediate/04-advanced-objects.js)
 	* [Código Clases](./Intermediate/05-advanced-classes.js)
 	* [Ejercicios](./Intermediate/06-advanced-objects-classes-exercises)
 
 * Clase 4 [19/02/2025] - Programación asíncrona
-	* [Vídeo](https://www.twitch.tv/videos/2385650388?t=00h22m48s)
+	* [Vídeo](https://www.twitch.tv/videos/2403686047?t=00h22m48s)
 	* [Código](./Intermediate/07-async.js)
 	* [Ejercicios](./Intermediate/08-async-exercises.js)
 
 * Clase 5 [26/02/2025] - Manejo de APIs
-	* [Vídeo](https://www.twitch.tv/videos/2391820998?t=00h17m25s)
+	* [Vídeo](https://www.twitch.tv/videos/2403686091?t=00h17m25s)
 	* [Código](./Intermediate/09-apis.js)
 	* [Ejercicios](./Intermediate/10-apis-exercises.js)
 
 * Clase 6 [06/03/2025] - Manejo del DOM
-	* [Vídeo](https://www.twitch.tv/videos/2398786900?t=00h11m52s)
+	* [Vídeo](https://www.twitch.tv/videos/2403686130?t=00h11m52s)
 	* [Código](./Intermediate/11-dom.js)
 	* Ejemplo simple: [HTML](./Intermediate/12-dom-example.html) - [JS](./Intermediate/13-dom-example.js)
 	* Ejemplo lista de tareas: [HTML](./Intermediate/14-tasklist.html) - [JS](./Intermediate/15-tasklist.js)
 	* [Ejercicios](./Intermediate/16-dom-exercises.js)
   
 * Clase 7 [12/03/2025] - Debug, Regex y Testing
-    * [Vídeo](https://www.twitch.tv/videos/2403971237?t=00h21m55s)
+    * [Vídeo](https://www.twitch.tv/videos/2420494093?t=00h21m55s)
     * Debug: [Código](./Intermediate/17-debugging.js) - [Ejercicios](./Intermediate/18-debugging-exercises.js)
     * Regex: [Código](./Intermediate/19-regex.js) - [Ejercicios](./Intermediate/20-regex-exercises.js)
     * Testing: [Código](./Intermediate/21-testing.js) - [Test](./Intermediate/22-testing.test.js) - [Ejercicios](./Intermediate/23-testing-exercises.js)

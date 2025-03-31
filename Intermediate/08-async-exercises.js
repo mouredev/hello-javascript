@@ -1,6 +1,6 @@
 /*
 Clase 4 - Programación asíncrona (19/02/2025)
-Vídeo: https://www.twitch.tv/videos/2385650388?t=00h22m48s
+Vídeo: https://www.twitch.tv/videos/2403686047?t=00h22m48s
 */
 
 // 1. Crea una función para saludar que reciba un nombre y un callback. 

@@ -1,6 +1,6 @@
 /*
 Clase 3 - Objetos y Clases avanzadas (12/02/2025)
-Vídeo: https://www.twitch.tv/videos/2379412787?t=00h21m33s
+Vídeo: https://www.twitch.tv/videos/2403685993?t=00h21m33s
 */
 
 // Objetos avanzados
