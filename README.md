@@ -9,51 +9,6 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## 🆕 NUEVO: Curso Intermedio [Finalizado]
-
-<a href="https://twitch.tv/mouredev"><img src="./Images/intermediate.jpg" style="height: 50%; width:50%;"/></a>
-
-### Curso de fundamentos intermedio (continuación del desde cero). 
-
-* Clase 1 [29/01/2025] - Funciones avanzadas
-	* [Vídeo](https://www.twitch.tv/videos/2403685765?t=00h08m45s)
-	* [Código](./Intermediate/00-advanced-functions.js)
-	* [Ejercicios](./Intermediate/01-advanced-functions-exercises.js)
-
-* Clase 2 [05/02/2025] - Estructuras avanzadas
-	* [Vídeo](https://www.twitch.tv/videos/2403685940?t=00h15m32s)
-	* [Código](./Intermediate/02-advanced-structures.js)
-	* [Ejercicios](./Intermediate/03-advanced-structures-exercises.js)
-
-* Clase 3 [12/02/2025] - Objetos y Clases avanzadas
-	* [Vídeo](https://www.twitch.tv/videos/2403685993?t=00h21m33s)
-	* [Código Objetos](./Intermediate/04-advanced-objects.js)
-	* [Código Clases](./Intermediate/05-advanced-classes.js)
-	* [Ejercicios](./Intermediate/06-advanced-objects-classes-exercises)
-
-* Clase 4 [19/02/2025] - Programación asíncrona
-	* [Vídeo](https://www.twitch.tv/videos/2403686047?t=00h22m48s)
-	* [Código](./Intermediate/07-async.js)
-	* [Ejercicios](./Intermediate/08-async-exercises.js)
-
-* Clase 5 [26/02/2025] - Manejo de APIs
-	* [Vídeo](https://www.twitch.tv/videos/2403686091?t=00h17m25s)
-	* [Código](./Intermediate/09-apis.js)
-	* [Ejercicios](./Intermediate/10-apis-exercises.js)
-
-* Clase 6 [06/03/2025] - Manejo del DOM
-	* [Vídeo](https://www.twitch.tv/videos/2403686130?t=00h11m52s)
-	* [Código](./Intermediate/11-dom.js)
-	* Ejemplo simple: [HTML](./Intermediate/12-dom-example.html) - [JS](./Intermediate/13-dom-example.js)
-	* Ejemplo lista de tareas: [HTML](./Intermediate/14-tasklist.html) - [JS](./Intermediate/15-tasklist.js)
-	* [Ejercicios](./Intermediate/16-dom-exercises.js)
-  
-* Clase 7 [12/03/2025] - Debug, Regex y Testing
-    * [Vídeo](https://www.twitch.tv/videos/2420494093?t=00h21m55s)
-    * Debug: [Código](./Intermediate/17-debugging.js) - [Ejercicios](./Intermediate/18-debugging-exercises.js)
-    * Regex: [Código](./Intermediate/19-regex.js) - [Ejercicios](./Intermediate/20-regex-exercises.js)
-    * Testing: [Código](./Intermediate/21-testing.js) - [Test](./Intermediate/22-testing.test.js) - [Ejercicios](./Intermediate/23-testing-exercises.js)
-
 ## Clases en vídeo
 
 ### Curso de fundamentos desde cero
@@ -108,6 +63,123 @@
 * [45 - Ejercicios: Módulos](https://youtu.be/1glVfFxj8a4?t=22720) | [Ejercicios](./Basic/31-modules-exercises.js) | [package.json](./Basic/package.json)
 * [Despedida](https://youtu.be/1glVfFxj8a4?t=22776)
 
+### Curso de fundamentos intermedio (continuación del desde cero)
+
+<a href="https://youtu.be/1glVfFxj8a4"><img src="./371.jpg" style="height: 50%; width:50%;"/></a>
+
+* [Introducción](https://youtu.be/)
+* [Primeros pasos](https://youtu.be/)
+
+Funciones avanzadas | [Código](./Intermediate/00-advanced-functions.js)
+
+* [1 - Ciudadanos de primera clase](https://youtu.be/)
+* [2 - Arrow functions](https://youtu.be/)
+* [3 - IIFE](https://youtu.be/)
+* [4 - Parámetros rest](https://youtu.be/)
+* [5 - Operador Spread](https://youtu.be/)
+* [6 - Closures](https://youtu.be/)
+* [7 - Recursividad](https://youtu.be/)
+* [8 - Contexto](https://youtu.be/)
+* [9 - Funciones parciales](https://youtu.be/)
+* [10 - Currying](https://youtu.be/)
+* [11 - Callbacks](https://youtu.be/)
+* [12 - Ejercicios: Funciones avanzadas](https://youtu.be/) | [Ejercicios](./Intermediate/01-advanced-functions-exercises.js)
+
+Estructuras avanzadas | [Código](./Intermediate/02-advanced-structures.js)
+
+* [13 - Estructuras avanzadas](https://youtu.be/)
+* [14 - Arrays avanzados: métodos funcionales](https://youtu.be/)
+* [15 - Arrays avanzados: manipulación](https://youtu.be/)
+* [16 - Arrays avanzados: ordenación](https://youtu.be/)
+* [17 - Arrays avanzados: búsqueda](https://youtu.be/)
+* [18 - Sets avanzados: operaciones](https://youtu.be/)
+* [19 - Sets avanzados: conversión](https://youtu.be/)
+* [20 - Sets avanzados: iteración](https://youtu.be/)
+* [21 - Maps avanzados: iteración](https://youtu.be/)
+* [22 - Maps avanzados: conversión](https://youtu.be/)
+* [23 - Ejercicios: Estructuras avanzadas](https://youtu.be/) | [Ejercicios](./Intermediate/03-advanced-structures-exercises.js)
+
+Objetos y clases avanzados | [Código Objetos](./Intermediate/04-advanced-objects.js) | [Código Clases](./Intermediate/05-advanced-classes.js)
+
+* [24 - Objetos avanzados](https://youtu.be/)
+* [25 - Prototipos](https://youtu.be/)
+* [26 - Herencia](https://youtu.be/)
+* [27 - Métodos estáticos y de instancia](https://youtu.be/)
+* [28 - Métodos avanzados](https://youtu.be/)
+* [29 - Clases avanzadas](https://youtu.be/)
+* [30 - Abstracción](https://youtu.be/)
+* [31 - Polimorfismo](https://youtu.be/)
+* [32 - Mixins](https://youtu.be/)
+* [33 - Singleton](https://youtu.be/)
+* [34 - Symbol](https://youtu.be/)
+* [35 - instanceof](https://youtu.be/)
+* [36 - create](https://youtu.be/)
+* [37 - Proxy](https://youtu.be/)
+* [38 - Ejercicios: Objetos y clases avanzados](https://youtu.be/) | [Ejercicios](./Intermediate/06-advanced-objects-classes-exercises)
+
+Asincronía | [Código](./Intermediate/07-async.js)
+
+* [39 - Asincronía](https://youtu.be/)
+* [40 - Código síncrono](https://youtu.be/)
+* [41 - Event Loop](https://youtu.be/)
+* [42 - Callbacks](https://youtu.be/)
+* [43 - Promesas](https://youtu.be/)
+* [44 - Async/Await](https://youtu.be/)
+* [45 - Ejercicios: Asincronía](https://youtu.be/) | [Ejercicios](./Intermediate/08-async-exercises.js)
+
+APIs | [Código](./Intermediate/09-apis.js)
+
+* [46 - APIs](https://youtu.be/)
+* [47 - API REST](https://youtu.be/)
+* [48 - Métodos HTTP](https://youtu.be/)
+* [49 - Códigos de respuesta HTTP](https://youtu.be/)
+* [50 - GET](https://youtu.be/)
+* [51 - Async/Await en APIs](https://youtu.be/)
+* [52 - POST](https://youtu.be/)
+* [53 - Herramientas para realizar peticiones HTTP](https://youtu.be/)
+* [54 - Manejo de errores](https://youtu.be/)
+* [55 - Métodos HTTP adicionales](https://youtu.be/)
+* [56 - Autenticación mediante API Key](https://youtu.be/)
+* [57 - Otros métodos de autenticación y autorización](https://youtu.be/)
+* [58 - Versionado de APIs](https://youtu.be/)
+* [59 - Otras APIs](https://youtu.be/)
+* [60 - Ejercicios: APIs](https://youtu.be/) | [Ejercicios](./Intermediate/10-apis-exercises.js)
+
+DOM | [Código](./Intermediate/11-dom.js)
+
+* [61 - DOM](https://youtu.be/)
+* [62 - Estructura del DOM](https://youtu.be/)
+* [63 - Métodos de selección](https://youtu.be/)
+* [64 - Manipulación de elementos](https://youtu.be/)
+* [65 - Modificación de atributos](https://youtu.be/)
+* [66 - Interacción con clases CSS](https://youtu.be/)
+* [67 - Creación y eliminación de elementos](https://youtu.be/)
+* [68 - Elementos y eventos del DOM](https://youtu.be/)
+* [69 - Ejemplos: acceso al DOM](https://youtu.be/) | Ejemplo simple: [HTML](./Intermediate/12-dom-example.html) - [JS](./Intermediate/13-dom-example.js)
+* [70 - Ejemplos: lista de tareas](https://youtu.be/) Ejemplo lista de tareas: [HTML](./Intermediate/14-tasklist.html) - [JS](./Intermediate/15-tasklist.js)
+* [71 - Ejercicios: DOM](https://youtu.be/) | [Ejercicios](./Intermediate/16-dom-exercises.js)
+
+Depuración | [Código](./Intermediate/17-debugging.js)
+
+* [72 - Depuración](https://youtu.be/)
+* [73 - Depurador](https://youtu.be/)
+* [74 - Ejercicios: Depuración](https://youtu.be/) | [Ejercicios](./Intermediate/18-debugging-exercises.js)
+
+Regex | [Código](./Intermediate/19-regex.js)
+
+* [75 - Regex](https://youtu.be/)
+* [76 - Sintaxis: test](https://youtu.be/)
+* [77 - Sintaxis: replace](https://youtu.be/)
+* [78 - Sintaxis: exec](https://youtu.be/)
+* [79 - Ejercicios: Regex](https://youtu.be/) | [Ejercicios](./Intermediate/20-regex-exercises.js)
+
+Testing | [Código](./Intermediate/21-testing.js) | [Test](./Intermediate/22-testing.test.js)
+
+* [80 - Testing](https://youtu.be/)
+* [81 - Jest](https://youtu.be/)
+* [82 - Ejercicios: Testing](https://youtu.be/) | [Ejercicios](./Intermediate/23-testing-exercises.js)
+* [Despedida](https://youtu.be/)
+
 ## Enlaces de interés
 
 * Impacto: [Stack Overflow](https://survey.stackoverflow.co/2023/#most-popular-technologies-language) | [GitHub](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/) | [Índice TIOBE](https://www.tiobe.com/tiobe-index/) | [Google Trends](https://trends.google.es/trends/explore?cat=5&date=today%205-y&q=%2Fm%2F02p97,%2Fm%2F05z1_,%2Fm%2F07sbkfb&hl=es)
@@ -126,6 +198,7 @@
 * APIs: [JSONPlaceholder](https://jsonplaceholder.typicode.com) | [OpenWeather](https://openweathermap.org) | [PokéAPI](https://pokeapi.co)
 * Expresiones regulares: [Documentación](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet
 ) | [Regex101](https://regex101.com/)
+* [Jest](https://jestjs.io/)
 
 ## Únete al campus de programación de la comunidad
 
