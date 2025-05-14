@@ -1,6 +1,6 @@
 /*
-Clase 2 - Estructuras avanzadas (05/02/2025)
-Vídeo: https://www.twitch.tv/videos/2403685940?t=00h15m32s
+Clases 13 a 22 - Estructuras avanzadas
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=4355
 */
 
 // Arrays avanzados

@@ -1,6 +1,6 @@
 /*
-Clase 3 - Objetos y Clases avanzadas (12/02/2025)
-Vídeo: https://www.twitch.tv/videos/2403685993?t=00h21m33s
+Clases 29 a 37 - Objetos y clases avanzados
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=9096
 */
 
 // Clases avanzadas

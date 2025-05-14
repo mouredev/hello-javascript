@@ -1,6 +1,6 @@
 /*
-Clase 4 - Programación asíncrona (19/02/2025)
-Vídeo: https://www.twitch.tv/videos/2403686047?t=00h22m48s
+Clases 39 a 44 - Asincronía
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=11890
 */
 
 // Programación asíncrona

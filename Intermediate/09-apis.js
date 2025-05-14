@@ -1,6 +1,6 @@
 /*
-Clase 5 - Manejo de APIs (26/02/2025)
-Vídeo: https://www.twitch.tv/videos/2403686091?t=00h17m25s
+Clases 46 a 59 - APIs
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=14777
 */
 
 // Manejo de APIs

@@ -1,6 +1,6 @@
 /*
-Clase 1 - Funciones avanzadas (29/01/2025)
-Vídeo: https://www.twitch.tv/videos/2403685765?t=00h08m45s
+Clases 2 a 11 - Funciones avanzadas
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=346
 */
 
 // Ciudadanos de primera clase

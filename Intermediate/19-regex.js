@@ -1,6 +1,6 @@
 /*
-Clase 7 - Debug, Regex y Testing (12/03/2025)
-Vídeo: https://www.twitch.tv/videos/2420494093?t=00h21m55s
+Clases 75 a 78 - Regex
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=24363
 */
 
 // Expresiones regulares

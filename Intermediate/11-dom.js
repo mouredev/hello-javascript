@@ -1,6 +1,6 @@
 /*
-Clase 6 - Manejo del DOM (06/03/2025)
-Vídeo: https://www.twitch.tv/videos/2403686130?t=00h11m52s
+Clases 61 a 68 - DOM
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=18822
 */
 
 // Manejo del DOM (Document Object Model)
