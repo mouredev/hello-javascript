@@ -62,7 +62,7 @@ function defaultSum(a = 0, b = 0) {
 defaultSum()
 defaultSum(5)
 defaultSum(5, 10)
-defaultSum(b = 5)
+defaultSum(undefined, 5)
 
 // Retorno de valores
 
@@ -96,11 +96,11 @@ applyFunc(myFunc4, "función de orden superior")
 
 // forEach
 
-myArray = [1, 2, 3, 4]
+const myArray = [1, 2, 3, 4]
 
-mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
+const mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
 
-myMap = new Map([
+const myMap = new Map([
     ["name", "Brais"],
     ["email", "braismoure@mouredev.com"],
     ["age", 37]
