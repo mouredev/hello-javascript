@@ -153,6 +153,10 @@
             {
               "name": "Content-Type",
               "value": "application/json"
+            },
+            {
+              "name": "X-API-Key",
+              "value": "nexa_45b52642066f47f2182bb0517905dab12626a82b68995704090354fb23cd34e4"
             }
           ]
         },
