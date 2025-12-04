@@ -1,0 +1,390 @@
+{
+  "name": "Auditoría Web Automática con IA (DEFINITIVO)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "auditoria-web",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "6b78b9f5-088d-4923-abf2-df33d3306fb0",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [
+        -544,
+        560
+      ],
+      "webhookId": "auditoria-web-webhook"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "15xOhTjsxiD2OJCvr253ChOzK3N0PxlpJc8Cw9GNc4NI",
+          "mode": "list",
+          "cachedResultName": "Leads Auditoría Web",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/15xOhTjsxiD2OJCvr253ChOzK3N0PxlpJc8Cw9GNc4NI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Hoja 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/15xOhTjsxiD2OJCvr253ChOzK3N0PxlpJc8Cw9GNc4NI/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Email": "={{ $json.body.email }}",
+            "URL": "={{ $json.body.url }}",
+            "Fecha": "={{ $now.toISO() }}",
+            "Estado": "Procesando"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "URL",
+              "displayName": "URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Fecha",
+              "displayName": "Fecha",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Estado",
+              "displayName": "Estado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "3ef4c331-c6ae-4498-8154-fc633afbfce8",
+      "name": "Google Sheets - Registrar Lead",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [
+        -352,
+        560
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "HxGSuzkxo6MIYkgO",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Webhook').item.json.body.url }}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "e50a5305-dc42-446d-8727-4a4acc11a2ff",
+      "name": "HTTP Request - Obtener HTML",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -144,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Limpieza de HTML a texto legible\nconst html = $input.item.json.data;\n\n// Eliminar scripts, styles, y tags\nlet text = html\n  .replace(/<script[^>]*>.*?<\\/script>/gis, '')\n  .replace(/<style[^>]*>.*?<\\/style>/gis, '')\n  .replace(/<[^>]+>/g, ' ')\n  .replace(/\\s+/g, ' ')\n  .replace(/&nbsp;/g, ' ')\n  .replace(/&amp;/g, '&')\n  .replace(/&lt;/g, '<')\n  .replace(/&gt;/g, '>')\n  .replace(/&quot;/g, '\"')\n  .trim();\n\n// Limitar a 8000 caracteres para no saturar la API\nif (text.length > 8000) {\n  text = text.substring(0, 8000) + '...';\n}\n\n// Extraer metadatos adicionales del HTML\nconst titleMatch = html.match(/<title[^>]*>([^<]+)<\\/title>/i);\nconst descriptionMatch = html.match(/<meta[^>]*name=[\"']description[\"'][^>]*content=[\"']([^\"']+)[\"']/i);\nconst h1Match = html.match(/<h1[^>]*>([^<]+)<\\/h1>/i);\n\nreturn {\n  cleanText: text,\n  originalUrl: $('Webhook').item.json.body.url,\n  userEmail: $('Webhook').item.json.body.email,\n  source: $('Webhook').item.json.body.source || 'widget_flotante',\n  metadata: {\n    title: titleMatch ? titleMatch[1] : 'No encontrado',\n    description: descriptionMatch ? descriptionMatch[1] : 'No encontrada',\n    h1: h1Match ? h1Match[1] : 'No encontrado'\n  }\n};"
+      },
+      "id": "ca12c96a-531a-4b4b-ada6-f86b370cbd33",
+      "name": "HTML to Text - Limpiar + Metadatos",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        64,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "modelId": "gpt-4o",
+        "messages": {
+          "values": [
+            {
+              "content": "Eres un Auditor Web Senior especializado en CRO (Conversion Rate Optimization) de la agencia 'Nexa'.\n\nTu misión: Analizar webs y detectar errores críticos que matan las conversiones.\n\n## FRAMEWORK DE ANÁLISIS (NEXA CRO AUDIT)\n\nAnaliza la web siguiendo estos 5 pilares:\n\n### 1. PROPUESTA DE VALOR (Value Proposition)\n- ¿Se entiende QUÉ hace la empresa en menos de 5 segundos?\n- ¿Comunica BENEFICIOS o solo características?\n- ¿Está visible above the fold?\nScore: /10\n\n### 2. LLAMADAS A LA ACCIÓN (CTAs)\n- ¿Hay un CTA claro y prominente?\n- ¿Usa verbos de acción específicos o genéricos?\n- ¿Cuántos CTAs compiten por la atención?\nScore: /10\n\n### 3. CONFIANZA Y CREDIBILIDAD (Trust Signals)\n- ¿Tiene testimonios, casos de éxito o logos de clientes?\n- ¿Hay garantías, certificaciones o pruebas sociales?\n- ¿El diseño transmite profesionalidad?\nScore: /10\n\n### 4. FRICCIÓN Y VELOCIDAD (User Experience)\n- ¿La web es rápida o se siente lenta?\n- ¿Hay distracciones (popups, banners, menús complejos)?\n- ¿El formulario de contacto pide demasiados datos?\nScore: /10\n\n### 5. URGENCIA Y ESCASEZ (Psychological Triggers)\n- ¿Hay razones para actuar AHORA vs. mañana?\n- ¿Usa escasez, urgencia o FOMO de forma ética?\nScore: /10\n\n## OUTPUT REQUERIDO\n\nResponde en este formato JSON:\n\n```json\n{\n  \"scores\": {\n    \"propuesta_valor\": 7,\n    \"ctas\": 4,\n    \"confianza\": 6,\n    \"friccion\": 5,\n    \"urgencia\": 3\n  },\n  \"score_total\": 25,\n  \"errores_criticos\": [\n    {\n      \"titulo\": \"Error 1: Título descriptivo\",\n      \"descripcion\": \"Explicación del problema específico encontrado\",\n      \"impacto\": \"Por qué esto mata las conversiones\",\n      \"solucion_nexa\": \"Cómo una web React moderna de Nexa lo resuelve\"\n    },\n    {\n      \"titulo\": \"Error 2: ...\",\n      \"descripcion\": \"...\",\n      \"impacto\": \"...\",\n      \"solucion_nexa\": \"...\"\n    },\n    {\n      \"titulo\": \"Error 3: ...\",\n      \"descripcion\": \"...\",\n      \"impacto\": \"...\",\n      \"solucion_nexa\": \"...\"\n    }\n  ],\n  \"oportunidad_principal\": \"La principal oportunidad de mejora en 1 frase\"\n}\n```\n\n**IMPORTANTE:**\n- Sé específico y cita ejemplos concretos de la web\n- No seas genérico, personaliza el análisis\n- Sé directo pero profesional, no agresivo\n- Los errores deben ser CRÍTICOS, no detalles menores",
+              "role": "system"
+            },
+            {
+              "content": "=Analiza esta web:\n\n**URL:** {{ $json.originalUrl }}\n\n**Metadatos:**\n- Title: {{ $json.metadata.title }}\n- Description: {{ $json.metadata.description }}\n- H1 principal: {{ $json.metadata.h1 }}\n\n**Contenido completo:**\n{{ $json.cleanText }}\n\n---\n\nGenera el análisis en formato JSON siguiendo el framework NEXA CRO AUDIT."
+            }
+          ]
+        },
+        "options": {
+          "maxTokens": 2000,
+          "temperature": 0.4
+        }
+      },
+      "id": "4e6651ee-7da2-4576-af6a-a0238c43793c",
+      "name": "OpenAI - Análisis CRO Estructurado",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [
+        256,
+        560
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "PteWUDrPjXrEfprX",
+          "name": "Velivo WhatsApp API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": "gpt-4o",
+        "messages": {
+          "values": [
+            {
+              "content": "Eres el Director de Marketing de Nexa, experto en copywriting persuasivo.\n\nTu misión: Convertir análisis técnicos de CRO en reportes profesionales y persuasivos para captar clientes.\n\n## TU ROL\n- Tono: Profesional pero cercano, directo y consultivo\n- Objetivo: Que el prospecto QUIERA agendar una llamada\n- Estilo: Usa datos concretos, evita generalidades\n\n## ESTRUCTURA DEL REPORTE\n\n```html\n<div style=\"font-family: 'Inter', system-ui, sans-serif; max-width: 700px; margin: 0 auto; color: #1e293b;\">\n  \n  <div style=\"background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%); padding: 40px 30px; border-radius: 12px 12px 0 0; text-align: center;\">\n    <h1 style=\"color: white; margin: 0; font-size: 32px; font-weight: 700;\">Tu Auditoría Web CRO</h1>\n    <p style=\"color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 18px;\">Análisis realizado por Nexa</p>\n  </div>\n  \n  <div style=\"background: white; padding: 40px 30px; border: 1px solid #e2e8f0; border-top: none;\">\n    \n    <!-- SCORE TOTAL -->\n    <div style=\"background: #f1f5f9; padding: 25px; border-radius: 8px; margin-bottom: 30px; text-align: center;\">\n      <p style=\"margin: 0; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #64748b;\">Score Total CRO</p>\n      <p style=\"margin: 10px 0 0 0; font-size: 48px; font-weight: 700; color: #0f172a;\">[SCORE]/50</p>\n      <p style=\"margin: 10px 0 0 0; font-size: 16px; color: #475569;\">[INTERPRETACION]</p>\n    </div>\n    \n    <!-- BREAKDOWN DE SCORES -->\n    <div style=\"margin-bottom: 40px;\">\n      <h2 style=\"font-size: 20px; margin-bottom: 20px; color: #0f172a;\">📊 Desglose por Categoría</h2>\n      [SCORES_VISUALES]\n    </div>\n    \n    <!-- ERRORES CRÍTICOS -->\n    <div style=\"margin-bottom: 40px;\">\n      <h2 style=\"font-size: 24px; margin-bottom: 10px; color: #dc2626;\">🚨 3 Errores Críticos que Matan tus Ventas</h2>\n      <p style=\"color: #64748b; margin-bottom: 30px;\">Estos problemas están costándote conversiones reales cada día:</p>\n      \n      [ERROR_1]\n      [ERROR_2]\n      [ERROR_3]\n    </div>\n    \n    <!-- OPORTUNIDAD PRINCIPAL -->\n    <div style=\"background: #ecfdf5; border-left: 4px solid #10b981; padding: 20px; border-radius: 8px; margin-bottom: 40px;\">\n      <p style=\"margin: 0; font-weight: 600; color: #065f46; font-size: 16px;\">💡 Oportunidad Principal:</p>\n      <p style=\"margin: 10px 0 0 0; color: #047857; font-size: 15px;\">[OPORTUNIDAD]</p>\n    </div>\n    \n    <!-- CTA FINAL -->\n    <div style=\"background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%); padding: 35px; border-radius: 12px; text-align: center;\">\n      <h3 style=\"color: white; margin: 0 0 15px 0; font-size: 24px;\">¿Quieres que arreglemos esto juntos?</h3>\n      <p style=\"color: rgba(255,255,255,0.9); margin: 0 0 25px 0; font-size: 16px;\">En Nexa transformamos webs obsoletas en máquinas de conversión con React y diseño centrado en CRO.</p>\n      <a href=\"https://calendly.com/nexa-web\" style=\"display: inline-block; background: white; color: #8b5cf6; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);\">📅 Agendar Llamada Estratégica</a>\n      <p style=\"color: rgba(255,255,255,0.8); margin: 20px 0 0 0; font-size: 13px;\">Sin compromiso • 30 minutos • Consultoría gratuita</p>\n    </div>\n    \n  </div>\n  \n  <div style=\"background: #f8fafc; padding: 20px; border-radius: 0 0 12px 12px; text-align: center; border: 1px solid #e2e8f0; border-top: none;\">\n    <p style=\"margin: 0; font-size: 14px; color: #64748b;\">Nexa • Web Development Agency</p>\n    <p style=\"margin: 5px 0 0 0; font-size: 14px; color: #64748b;\">🌐 <a href=\"https://nexaweblaunch.com\" style=\"color: #8b5cf6; text-decoration: none;\">nexaweblaunch.com</a></p>\n  </div>\n  \n</div>\n```\n\n## INSTRUCCIONES\n\n1. Reemplaza `[SCORE]` con el score_total\n2. Reemplaza `[INTERPRETACION]` con:\n   - 0-15: \"Necesitas una reconstrucción urgente\"\n   - 16-25: \"Muchas oportunidades de mejora\"\n   - 26-35: \"Buen punto de partida, necesita optimización\"\n   - 36-45: \"Sólido, pero aún hay margen de crecimiento\"\n   - 46-50: \"Excelente, solo refinamientos menores\"\n3. Reemplaza `[SCORES_VISUALES]` con barras visuales para cada categoría\n4. Reemplaza `[ERROR_1/2/3]` con los errores formateados profesionalmente\n5. Reemplaza `[OPORTUNIDAD]` con la oportunidad principal\n\n**Sé específico, usa los datos del análisis, personaliza el mensaje.**",
+              "role": "system"
+            },
+            {
+              "content": "=Genera el reporte HTML profesional basado en este análisis:\n\n{{ $json.message.content }}\n\nURL analizada: {{ $('HTML to Text - Limpiar + Metadatos').item.json.originalUrl }}"
+            }
+          ]
+        },
+        "options": {
+          "maxTokens": 2500,
+          "temperature": 0.7
+        }
+      },
+      "id": "f67e17bd-c0d1-4493-9e45-210e30db235a",
+      "name": "OpenAI - Generar Reporte HTML",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [
+        528,
+        560
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "PteWUDrPjXrEfprX",
+          "name": "Velivo WhatsApp API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://hurdtyeloklqhfhskojy.supabase.co/functions/v1/save-audit-lead",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "x-api-key",
+              "value": "nexa_45b52642066f47f2182bb0517905dab12626a82b68995704090354fb23cd34e4"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"email\": \"{{ $('Webhook').item.json.body.email }}\",\n  \"target_url\": \"{{ $('Webhook').item.json.body.url }}\",\n  \"ai_analysis\": {{ JSON.stringify($('OpenAI - Análisis CRO Estructurado').item.json.message.content) }},\n  \"source\": \"{{ $('HTML to Text - Limpiar + Metadatos').item.json.source }}\",\n  \"analysis_status\": \"completed\"\n}",
+        "options": {}
+      },
+      "id": "557d3cc1-f79b-4926-bcb2-ced4e8772f3f",
+      "name": "Supabase Edge Function - Guardar Lead",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        848,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.resend.com/emails",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer re_PeNyaQoM_GLUDCEgWDvBPjAsFn6neeXCR"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"from\": \"hola@nexaweblaunch.com\",\n  \"to\": [\"{{ $('HTML to Text - Limpiar + Metadatos').item.json.userEmail }}\"],\n  \"subject\": \"🚀 Tu Auditoría Web CRO - Nexa\",\n  \"html\": \"{{ $('OpenAI - Generar Reporte HTML').item.json.message.content }}\"\n}",
+        "options": {}
+      },
+      "id": "93c3774a-130b-4fbd-83ad-bba324ba07f4",
+      "name": "HTTP Request - Enviar Email (Resend)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1088,
+        560
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "C2XLpIa3cmUPWNz0",
+          "name": "Anthropic API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={ \"success\": true, \"message\": \"Auditoría enviada correctamente a {{ $('HTML to Text - Limpiar + Metadatos').item.json.userEmail }}\", \"url\": \"{{ $('HTML to Text - Limpiar + Metadatos').item.json.originalUrl }}\", \"saved_to_database\": true }",
+        "options": {}
+      },
+      "id": "a4785cb0-0a76-4071-a500-0c13cfd9d536",
+      "name": "Webhook Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1296,
+        560
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets - Registrar Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets - Registrar Lead": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request - Obtener HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request - Obtener HTML": {
+      "main": [
+        [
+          {
+            "node": "HTML to Text - Limpiar + Metadatos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML to Text - Limpiar + Metadatos": {
+      "main": [
+        [
+          {
+            "node": "OpenAI - Análisis CRO Estructurado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI - Análisis CRO Estructurado": {
+      "main": [
+        [
+          {
+            "node": "OpenAI - Generar Reporte HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI - Generar Reporte HTML": {
+      "main": [
+        [
+          {
+            "node": "Supabase Edge Function - Guardar Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Supabase Edge Function - Guardar Lead": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request - Enviar Email (Resend)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request - Enviar Email (Resend)": {
+      "main": [
+        [
+          {
+            "node": "Webhook Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b2b408d22de17808edca35b8a05389a183afbb6a64366be728c59ed19d44cb0f"
+  },
+  "id": "TdIPvjbCd5exDyNN",
+  "tags": []
+}
