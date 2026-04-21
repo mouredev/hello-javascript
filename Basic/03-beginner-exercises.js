@@ -70,7 +70,7 @@ myBigInt2 = 999999999999999999999999999n
 
 // 7. A continuación, modifica los valores de las variables por otros de distinto tipo
 myName = 123
-age = "veinte y cinco"
+age = "veinte y 6"
 height = true
 isTeacher = null
 isStudent = undefined
