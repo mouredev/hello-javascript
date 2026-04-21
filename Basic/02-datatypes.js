@@ -6,7 +6,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=3599
 // Tipos de datos primitivos
 
 // Cadenas de texto (string)
-let myName = "Brais Moure"
+let myName = "Brais paco2"
 let alias = 'MoureDev'
 let email = `braismoure@mouredev.com`
 
