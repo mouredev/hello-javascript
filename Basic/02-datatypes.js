@@ -1,55 +1,38 @@
-/*
-Clase 17 - Tipos de datos
-Vídeo: https://youtu.be/1glVfFxj8a4?t=3599
-*/
+/*Los Datos primitivos son aquellos en los que se fundamenta nuestra interacción con el lenguaje. Son datos básicos e inmutables. Representan un sólo valor. Es lo que significa dato primitivo. No son objetos.Tampoco tienen funciones o métodos.
+Los tipos de datos primitivos son siete:
+*Cadena de Texto.(String)
+*Números
+ */
 
-// Tipos de datos primitivos
-
-// Cadenas de texto (string)
-let myName = "Brais Moure"
-let alias = 'MoureDev'
-let email = `braismoure@mouredev.com`
-
-// Números (number)
-let age = 37 // Entero
-let height = 1.77 // Decimal
-
+// Texto(string)
+let texto = 'Cadena de texto'
+// Número (number)
+let numero = 5 //entero
+let decimal = 1.73 //decimal
 // Booleanos (boolean)
-let isTeacher = true
-let isStudent = false
-
+let isTeacher = 'true'
+let isStudent = 'false'
 // Undefined
-let undefinedValue
-console.log(undefinedValue)
-
+let indefinedValue = undefined
+console.log(indefinedValue) //undefined: La variable no está aún con un valor definido.
+let otroIndefinedValue
+console.log(otroIndefinedValue) //undefined
 // Null
-let nullValue = null
-
+let variableNula = null // indica ausencia de valor.
 // Symbol
-
-let mySymbol = Symbol("mysymbol")
-
-// BigInt
-
-let myBigInt = BigInt(817239871289371986589716389471628379612983761289376129)
-let myBigInt2 = 817239871289371986589716389471628379612983761289376129n
-
-// Mostramos los tipos de datos
-console.log(typeof myName)
-console.log(typeof alias)
-console.log(typeof email)
-
-console.log(typeof age)
-console.log(typeof height)
-
-console.log(typeof isTeacher)
-console.log(typeof isStudent)
-
-console.log(typeof undefinedValue)
-
-console.log(typeof nullValue)
-
+let mySymbol = Symbol('esteSimbolo')
+console.log(mySymbol)
+// Bigint
+let numeroGrande = BigInt(546546446544455445454544544546)
+let numeroGrande2 = 61646444456456446446464554848684488n //Otra forma de representarlo es poniendo al final una n.
+console.log(numeroGrande)
+console.log(numeroGrande2)
+// Para mostrar los tipos de datos
+console.log(typeof numeroGrande)
 console.log(typeof mySymbol)
-
-console.log(typeof myBigInt)
-console.log(typeof myBigInt2)
+console.log(typeof variableNula)
+console.log(typeof indefinedValue)
+console.log('nuevo')
+console.log('nuevo')
+console.log('nuevo')
+console.log('nuevo')

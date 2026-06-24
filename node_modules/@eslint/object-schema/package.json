@@ -1,0 +1,62 @@
+{
+  "name": "@eslint/object-schema",
+  "version": "3.0.5",
+  "description": "An object schema merger/validator",
+  "type": "module",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    "require": {
+      "types": "./dist/cjs/index.d.cts",
+      "default": "./dist/cjs/index.cjs"
+    },
+    "import": {
+      "types": "./dist/esm/index.d.ts",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build:dedupe-types": "node ../../tools/dedupe-types.js dist/cjs/index.cjs dist/esm/index.js",
+    "build:cts": "node ../../tools/build-cts.js dist/esm/index.d.ts dist/cjs/index.d.cts",
+    "build": "rollup -c && npm run build:dedupe-types && tsc -p tsconfig.esm.json && npm run build:cts",
+    "lint:types": "attw --pack",
+    "pretest": "npm run build",
+    "test": "npm run test:types && npm run test:unit",
+    "test:coverage": "c8 npm run test:unit",
+    "test:jsr": "npx -y jsr@latest publish --dry-run",
+    "test:types": "tsc -p tests/types/tsconfig.json",
+    "test:unit": "mocha \"tests/**/*.test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eslint/rewrite.git",
+    "directory": "packages/object-schema"
+  },
+  "keywords": [
+    "object",
+    "validation",
+    "schema",
+    "merge"
+  ],
+  "author": "Nicholas C. Zakas",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eslint/rewrite/issues"
+  },
+  "homepage": "https://github.com/eslint/rewrite/tree/main/packages/object-schema#readme",
+  "devDependencies": {
+    "rollup-plugin-copy": "^3.5.0"
+  },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  }
+}
