@@ -17,3 +17,7 @@ const constante = "Este valor no cambia"
 console.log(constante)
 // constante='Intento de cambio' Da error.
 console.log(constante)
+console.log('nuevo')
+console.log("nuevo")
+console.log("nuevo");
+

@@ -5,13 +5,13 @@ Los tipos de datos primitivos son siete:
  */
 
 // Texto(string)
-let texto = "Cadena de texto"
+let texto = 'Cadena de texto'
 // Número (number)
 let numero = 5 //entero
 let decimal = 1.73 //decimal
 // Booleanos (boolean)
-let isTeacher = "true"
-let isStudent = "false"
+let isTeacher = 'true'
+let isStudent = 'false'
 // Undefined
 let indefinedValue = undefined
 console.log(indefinedValue) //undefined: La variable no está aún con un valor definido.
@@ -20,7 +20,7 @@ console.log(otroIndefinedValue) //undefined
 // Null
 let variableNula = null // indica ausencia de valor.
 // Symbol
-let mySymbol = Symbol("esteSimbolo")
+let mySymbol = Symbol('esteSimbolo')
 console.log(mySymbol)
 // Bigint
 let numeroGrande = BigInt(546546446544455445454544544546)
@@ -32,4 +32,7 @@ console.log(typeof numeroGrande)
 console.log(typeof mySymbol)
 console.log(typeof variableNula)
 console.log(typeof indefinedValue)
-console.log("nuevo")
+console.log('nuevo')
+console.log('nuevo')
+console.log('nuevo')
+console.log('nuevo')
